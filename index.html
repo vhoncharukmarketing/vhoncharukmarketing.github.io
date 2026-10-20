@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Valeriia Honcharuk — Head of E-commerce & Marketing. Performance marketing portfolio: Meta Ads, Google Ads, analytics. Cases in e-commerce, food delivery and beauty.">
+<meta property="og:title" content="Valeriia Honcharuk · Portfolio">
+<meta property="og:description" content="I turn ad budgets into revenue. Performance marketing cases: +151% online revenue, $1.35M from ads, ROMI 615%.">
+<meta property="og:image" content="img/valeriia.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23b4235a'/><text x='32' y='43' font-size='30' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'>VH</text></svg>">
+<script>document.documentElement.classList.add("js");</script>
+<title>Valeriia Honcharuk Portfolio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+/* Layout: light "results sheet" — every case leads with three big result cards, then task → what I did → result, creatives (max 4) as a small side note.
+   Each section is one 16:9 sheet: screen scrolls them, print gives one per page. Deliberately light-only. */
+:root {
+  color-scheme: light;
+  --bg: #f5f3f7;       /* soft lilac-grey page */
+  --card: #ffffff;
+  --ink: #1d1a24;
+  --muted: #6f6879;
+  --line: #e8e3ee;
+  --berry: #b4235a;    /* result accent */
+  --berry-soft: #fbe4ec;
+  --good: #1f8a5b;
+  --good-soft: #e3f5ec;
+  --f: "Onest", "Segoe UI", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f); font-size: 15px; line-height: 1.5; padding-inline: 16px; padding-block: 0; }
+.wrap { max-width: 1160px; margin: 0 auto; }
+h1, h2, h3 { margin: 0; line-height: 1.12; letter-spacing: -0.02em; text-wrap: balance; }
+p { margin: 0; }
+ul { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 5px; }
+.num { font-variant-numeric: tabular-nums; }
+.kicker { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--berry); }
+.sub { color: var(--muted); }
+
+.slide { padding-block: 56px; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 18px; }
+.slide:last-child { border-bottom: 0; }
+
+/* ---------- case head ---------- */
+.head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px 24px; flex-wrap: wrap; }
+.head h2 { font-size: clamp(26px, 3.2vw, 36px); font-weight: 800; margin-top: 6px; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.tag { font-size: 12.5px; color: var(--muted); background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; }
+.tag.ok { color: var(--good); background: var(--good-soft); border-color: transparent; font-weight: 600; }
+.hero { background: var(--ink); color: #fff; border-radius: 14px; padding: 14px 20px; text-align: right; min-width: 0; }
+.hero b { display: block; font-size: 38px; font-weight: 800; line-height: 1; letter-spacing: -0.03em; }
+.hero span { font-size: 12.5px; color: #cfcad9; }
+
+/* ---------- result cards ---------- */
+.cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.card { background: var(--card); border-radius: 14px; padding: 16px 18px; display: flex; flex-direction: column; gap: 2px; box-shadow: 0 1px 0 var(--line); min-width: 0; }
+.card .v { font-size: 32px; font-weight: 800; letter-spacing: -0.03em; color: var(--berry); line-height: 1.1; }
+.card .k { font-size: 14.5px; font-weight: 700; }
+.card .s { font-size: 12.5px; color: var(--muted); }
+
+/* ---------- body: steps + side ---------- */
+.body { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 12px; align-items: stretch; }
+.body.full { grid-template-columns: minmax(0, 1fr); }
+.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.step { background: var(--card); border-radius: 14px; padding: 16px 18px; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.step h3 { font-size: 15.5px; font-weight: 800; display: flex; align-items: center; gap: 8px; }
+.step h3 i { font-style: normal; width: 22px; height: 22px; border-radius: 50%; background: var(--berry-soft); color: var(--berry); display: inline-grid; place-items: center; font-size: 12px; flex: none; }
+.step p, .step li { color: #4b4656; font-size: 13.8px; line-height: 1.45; }
+.step li b, .step p b { color: var(--ink); }
+
+.side { background: var(--card); border-radius: 14px; padding: 14px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.side .lbl { font-size: 11.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.creo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.creo img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: top; border-radius: 9px; display: block; background: var(--line); }
+
+.creo.raw img { aspect-ratio: auto; object-fit: contain; background: #111; }
+.creo.one { grid-template-columns: 1fr; }
+.citybars .bar { grid-template-columns: 92px 1fr 44px; }
+
+/* bars (Brows) */
+.bars { display: flex; flex-direction: column; gap: 7px; }
+.bar { display: grid; grid-template-columns: 84px 1fr 50px; gap: 8px; align-items: center; font-size: 12.5px; }
+.bar .d { color: var(--muted); }
+.bar .t { height: 9px; background: var(--berry-soft); border-radius: 5px; overflow: hidden; }
+.bar .t i { display: block; height: 100%; background: var(--berry); border-radius: 5px; }
+.bar .a { text-align: right; font-weight: 700; }
+.split { display: flex; height: 9px; border-radius: 5px; overflow: hidden; }
+.split i { display: block; }
+.legend { font-size: 12.5px; color: var(--muted); }
+.legend b { color: var(--ink); }
+
+/* table (salon network) */
+.tbl-wrap { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; font-size: 14px; font-variant-numeric: tabular-nums; }
+.tbl th, .tbl td { text-align: right; padding: 8px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.tbl th:first-child, .tbl td:first-child { text-align: left; padding-left: 0; }
+.tbl thead th { font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+.tbl tr:last-child td { border-bottom: 0; }
+.tbl tr.hl td { color: var(--berry); font-weight: 700; }
+
+/* ---------- cover ---------- */
+.cover { padding-block: 64px 56px; gap: 28px; }
+.cover-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: end; }
+.cover h1 { font-size: clamp(38px, 6vw, 68px); font-weight: 800; letter-spacing: -0.035em; margin: 12px 0 16px; }
+.cover h1 em { font-style: normal; color: var(--berry); }
+.cover .lead { font-size: 17px; color: #4b4656; max-width: 46ch; }
+.cover .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.cover .card .v { font-size: 34px; }
+.who { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-top: 22px; }
+.who b { font-size: 16px; }
+.who span { color: var(--muted); font-size: 14px; }
+
+/* ---------- about ---------- */
+.about { display: grid; grid-template-columns: 1.15fr 1fr; gap: 14px; }
+.panel { background: var(--card); border-radius: 14px; padding: 22px 24px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.panel h2 { font-size: clamp(24px, 2.8vw, 32px); font-weight: 800; }
+.panel p { color: #4b4656; font-size: 15px; }
+.pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill { font-size: 13px; background: var(--bg); border-radius: 8px; padding: 4px 10px; }
+.rows { display: flex; flex-direction: column; }
+.rows div { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+.rows div:last-child { border-bottom: 0; }
+.rows span:last-child { color: var(--muted); text-align: right; }
+.lbl2 { font-size: 11.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+
+/* ---------- more results grid ---------- */
+.grid6 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.mini { background: var(--card); border-radius: 14px; padding: 16px 18px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.mini h3 { font-size: 17px; font-weight: 800; }
+.mini .k2 { font-size: 11.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.mini .big { display: flex; gap: 18px; flex-wrap: wrap; }
+.mini .big div { display: flex; flex-direction: column; }
+.mini .big b { font-size: 24px; font-weight: 800; color: var(--berry); letter-spacing: -0.02em; line-height: 1.1; }
+.mini .big span { font-size: 12px; color: var(--muted); }
+.mini p { font-size: 13.5px; color: #4b4656; }
+.plist li { font-size: 13.8px; color: #4b4656; }
+
+/* ---------- process ---------- */
+.process { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+.process .step p { color: var(--muted); }
+.h2s { font-size: clamp(24px, 3vw, 34px); font-weight: 800; }
+
+/* ---------- contact ---------- */
+.contact { gap: 24px; }
+.contact h2 { font-size: clamp(36px, 5.5vw, 64px); font-weight: 800; letter-spacing: -0.035em; }
+.contact h2 em { font-style: normal; color: var(--berry); }
+.contacts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; max-width: 820px; }
+.contacts div { background: var(--card); border-radius: 12px; padding: 14px 18px; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.contacts span { font-size: 12px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .08em; }
+.contacts b, .contacts a { font-size: 16px; font-weight: 600; color: var(--ink); text-decoration: none; overflow-wrap: anywhere; }
+.contacts a:hover, .contacts a:focus-visible { color: var(--berry); text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--berry); outline-offset: 2px; }
+
+/* ---------- responsive (screen only, so print keeps the slide layout) ---------- */
+@media screen and (max-width: 900px) {
+  .cover-grid, .about, .body { grid-template-columns: 1fr; }
+  .steps, .grid6 { grid-template-columns: 1fr; }
+  .process { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero { text-align: left; }
+  .creo { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media screen and (max-width: 560px) {
+  .cards, .cover .cards, .process, .contacts { grid-template-columns: 1fr; }
+  .creo { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .slide { padding-block: 40px; }
+}
+
+/* ---------- print: one 16:9 sheet per section ---------- */
+@page { size: 1280px 720px; margin: 0; }
+@media print {
+  html, body { margin: 0; padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .wrap { max-width: none; }
+  .slide { width: 1280px; height: 720px; padding: 44px 56px; border: 0; break-after: page; overflow: hidden; gap: 14px; justify-content: center; }
+  .slide:last-child { break-after: auto; }
+  .slide > * { break-inside: avoid; }
+  .cover-grid { display: flex; gap: 40px; align-items: flex-end; }
+  .cover-grid > :first-child { flex: 1.25; }
+  .cover-grid > .cards { flex: 1; }
+  .cover h1 { font-size: 60px; }
+}
+.acct { display: grid; grid-template-columns: minmax(0, 1fr) 330px; gap: 12px; margin-top: 14px; align-items: start; }
+.shot { margin: 0; background: var(--card); border-radius: 14px; padding: 12px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.shot img { width: 100%; height: auto; display: block; border-radius: 8px; border: 1px solid var(--line); }
+.shot figcaption { font-size: 12.5px; color: var(--muted); }
+.insights { display: grid; gap: 10px; }
+.ins { background: var(--card); border-radius: 14px; padding: 12px 16px; }
+.ins h3 { margin: 0 0 4px; font-size: 15px; color: var(--berry); }
+.ins p { margin: 0; font-size: 13.5px; line-height: 1.45; color: #4b4656; }
+@media screen and (max-width: 900px) { .acct { grid-template-columns: 1fr; } }
+.stack { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.stack .side { padding: 10px 14px; }
+.who { align-items: center; }
+.who img { width: 76px; height: 76px; border-radius: 50%; object-fit: cover; border: 3px solid var(--card); box-shadow: 0 2px 10px rgba(29,26,36,.12); }
+.who .nm { display: flex; flex-direction: column; gap: 2px; }
+.acct2 { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.35fr); gap: 12px; margin-top: 14px; align-items: start; }
+.acct2 .col { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.acct2 .ins ul { padding-left: 16px; gap: 3px; }
+.acct2 .ins li { font-size: 13.5px; color: #4b4656; line-height: 1.4; }
+.lang { display: inline-flex; gap: 2px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 3px; box-shadow: 0 2px 10px rgba(29,26,36,.08); }
+.lang button { font: 700 12.5px/1 var(--f); letter-spacing: .06em; border: 0; background: transparent; color: var(--muted); padding: 7px 11px; border-radius: 999px; cursor: pointer; }
+.lang button[aria-pressed="true"] { background: var(--ink); color: #fff; }
+.lang button:focus-visible { outline: 2px solid var(--berry); outline-offset: 1px; }
+@media print { .lang { display: none; } }
+.creo.mosaic img:first-child { grid-row: span 2; aspect-ratio: auto; height: 100%; }
+.goal { border-left: 3px solid var(--berry); padding-left: 12px; color: var(--ink) !important; font-weight: 600; }
+@media screen and (max-width: 900px) { .acct2 { grid-template-columns: 1fr; } }
+/* ---------- case navigation + collapsible cases (screen only; print shows everything) ---------- */
+.slide { scroll-margin-top: 60px; }
+.chips { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
+.chip { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; display: flex; flex-direction: column; gap: 2px; text-decoration: none; color: var(--ink); min-width: 0; transition: border-color .15s, transform .15s; }
+.chip:hover { border-color: var(--berry); transform: translateY(-1px); }
+.chip:focus-visible { outline: 2px solid var(--berry); outline-offset: 2px; }
+.chip .n { font-size: 11.5px; font-weight: 700; color: var(--berry); letter-spacing: .1em; }
+.chip b { font-size: 14.5px; line-height: 1.25; }
+.chip .m { font-size: 12.5px; color: var(--muted); }
+.case-actions { display: none; align-items: center; gap: 14px; flex-wrap: wrap; }
+.js .case-actions { display: flex; }
+.more { font: 700 14px/1 var(--f); color: var(--berry); background: var(--berry-soft); border: 0; border-radius: 999px; padding: 11px 18px; cursor: pointer; }
+.more:hover { background: #f7d2df; }
+.more:focus-visible, .back:focus-visible { outline: 2px solid var(--berry); outline-offset: 2px; }
+.more::after { content: " ▾"; }
+.case.open .more::after { content: " ▴"; }
+.when-open, .case.open .when-closed { display: none; }
+.case.open .when-open { display: inline; }
+.back { font-size: 13.5px; color: var(--muted); text-decoration: none; }
+.back:hover { color: var(--berry); text-decoration: underline; }
+@media screen {
+  .js .case:not(.open) .body { display: none; }
+  .js .case-extra:not(.open) { display: none; }
+  .js .case-extra.open { border-top: 0; padding-top: 0; }
+}
+@media print { .case-nav, .case-actions { display: none !important; } }
+@media screen and (max-width: 900px) {
+  .chips { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .head { flex-direction: column; }
+  .hero { align-self: stretch; }
+}
+@media screen and (max-width: 560px) {
+  body { font-size: 14.5px; }
+  .slide { gap: 14px; }
+  .chips { gap: 8px; }
+  .chip { padding: 10px 12px; }
+  .chip b { font-size: 13.5px; }
+  .hero b { font-size: 32px; }
+  .card .v { font-size: 28px; }
+  .cover h1 { font-size: 36px; }
+  .who img { width: 60px; height: 60px; }
+  .more { flex: 1; }
+}
+.nda { background: var(--card); border: 1px dashed #d9c9d6; text-align: center; border-radius: 14px; padding: 14px 18px; font-size: 14.5px; color: #4b4656; }
+.nda b { color: var(--berry); }
+.nda a { color: var(--berry); font-weight: 700; text-decoration: none; white-space: nowrap; }
+.nda a:hover { text-decoration: underline; }
+/* ---------- language on the cover, case menu at the bottom ---------- */
+.cover-top { display: flex; justify-content: flex-end; margin-bottom: -8px; }
+.slide { scroll-margin-top: 16px; }
+.dock { position: fixed; left: 50%; bottom: calc(16px + env(safe-area-inset-bottom)); transform: translateX(-50%); z-index: 30; }
+.dock-btn { display: flex; align-items: center; gap: 8px; font: 700 15px/1 var(--f); color: #fff; background: var(--ink); border: 0; border-radius: 999px; padding: 14px 20px; box-shadow: 0 8px 24px rgba(29,26,36,.28); cursor: pointer; white-space: nowrap; max-width: calc(100vw - 32px); }
+.dock-btn:focus-visible { outline: 3px solid var(--berry); outline-offset: 2px; }
+.dock-cur { color: #f3a6c1; font-weight: 600; overflow: hidden; text-overflow: ellipsis; }
+.dock-cur:empty { display: none; }
+.sheet-bg { position: fixed; inset: 0; background: rgba(29,26,36,.35); z-index: 40; }
+.sheet { position: fixed; z-index: 41; left: 50%; bottom: calc(16px + env(safe-area-inset-bottom)); transform: translateX(-50%); width: min(720px, calc(100vw - 24px)); max-height: min(80vh, 640px); overflow: auto; background: var(--bg); border-radius: 20px; padding: 16px; box-shadow: 0 16px 48px rgba(29,26,36,.3); }
+.sheet[hidden], .sheet-bg[hidden] { display: none; }
+.sheet-head { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.sheet-head b { font-size: 18px; font-weight: 800; margin-right: auto; }
+.sheet-x { width: 40px; height: 40px; border-radius: 50%; border: 0; background: var(--card); font-size: 24px; line-height: 1; color: var(--ink); cursor: pointer; }
+.sheet-x:focus-visible { outline: 2px solid var(--berry); outline-offset: 2px; }
+.sheet-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.sheet-list .tab { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; display: flex; flex-direction: column; gap: 2px; text-decoration: none; color: var(--ink); min-width: 0; }
+.sheet-list .tab .n { font-size: 11.5px; font-weight: 700; color: var(--berry); letter-spacing: .1em; }
+.sheet-list .tab b { font-size: 15px; line-height: 1.25; }
+.sheet-list .tab .m { font-size: 13px; color: var(--muted); }
+.sheet-list .tab.active { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+.sheet-list .tab:focus-visible { outline: 2px solid var(--berry); outline-offset: 2px; }
+.sheet-list .tab-more { justify-content: center; align-items: center; font-weight: 700; color: var(--berry); }
+.wrap { padding-bottom: 80px; }
+@media screen and (max-width: 560px) {
+  .sheet { left: 0; right: 0; bottom: 0; transform: none; width: auto; border-radius: 20px 20px 0 0; max-height: 85vh; padding: 16px 12px calc(16px + env(safe-area-inset-bottom)); }
+  .sheet-list { grid-template-columns: 1fr; }
+  .sheet-list .tab { flex-direction: row; flex-wrap: wrap; align-items: baseline; column-gap: 10px; padding: 14px; }
+  .sheet-list .tab .m { flex-basis: 100%; }
+  .cover-top { justify-content: center; margin-bottom: 0; }
+  .lang button { padding: 9px 14px; font-size: 13.5px; }
+}
+@media print { .dock, .sheet, .sheet-bg, .cover-top { display: none !important; } .wrap { padding-bottom: 0; } }
+</style>
+<main class="wrap">
+<!-- 1 COVER -->
+<section class="slide cover" id="top">
+<div class="cover-top"><nav class="lang" aria-label="Language">
+  <button type="button" data-l="en" aria-pressed="true">EN</button>
+  <button type="button" data-l="ru" aria-pressed="false">RU</button>
+  <button type="button" data-l="pl" aria-pressed="false">PL</button>
+</nav></div>
+<div class="cover-grid">
+<div>
+<span class="kicker" data-t="12">Portfolio · Performance marketing · 2026</span>
+<h1 data-t="13">I turn ad budgets into <em>revenue.</em></h1>
+<p class="lead" data-t="14">Head of E-commerce &amp; Marketing with 8+ years in performance marketing. I build full funnels on Meta and Google, set up analytics that shows where every złoty goes, and scale what sells: from beauty salons to e-commerce and food chains in 15+ cities.</p>
+<div class="who"><img alt="Valeriia Honcharuk" src="img/valeriia.jpg"/><div class="nm"><b>Valeriia Honcharuk</b><span data-t="15">Head of E-commerce &amp; Marketing · Warsaw</span></div></div>
+</div>
+<div class="cards">
+<div class="card"><span class="v num">+151%</span><span class="k" data-t="16">online revenue</span><span class="s" data-t="17">alcohol e-commerce, year over year</span></div>
+<div class="card"><span class="v num">$1.35M</span><span class="k" data-t="18">revenue from ads</span><span class="s" data-t="19">sushi chain, 15+ cities, ROAS 5.27×</span></div>
+<div class="card"><span class="v num">615%</span><span class="k" data-t="20">ROMI</span><span class="s" data-t="21">permanent make-up, Milan</span></div>
+<div class="card"><span class="v num">1,100+</span><span class="k" data-t="22">bookings</span><span class="s" data-t="23">beauty salon, Warsaw</span></div>
+</div>
+</div>
+</section>
+<!-- CASE NAVIGATION -->
+<section class="slide case-nav" id="cases">
+<span class="kicker" data-t="24">Cases</span>
+<h2 class="h2s" data-t="25">Choose a case: it opens right away</h2>
+<nav aria-label="Cases" class="chips">
+<a class="chip" href="#brows-milano"><span class="n">01</span><b data-t="26">Brows Permanent Milano</b><span class="m" data-t="27">615% ROMI</span></a>
+<a class="chip" href="#skin-bar"><span class="n">02</span><b data-t="28">Skin.Bar</b><span class="m" data-t="29">1,100+ bookings</span></a>
+<a class="chip" href="#salon-network"><span class="n">03</span><b data-t="30">Hair salon network</b><span class="m" data-t="31">115+ clients, KPI met</span></a>
+<a class="chip" href="#fine-spirits"><span class="n">04</span><b data-t="32">Fine Spirits</b><span class="m" data-t="33">+151% online revenue</span></a>
+<a class="chip" href="#sushi-chain"><span class="n">05</span><b data-t="34">Sushi delivery chain</b><span class="m" data-t="35">$1.35M revenue</span></a>
+<a class="chip" href="#japonski-sasiad"><span class="n">06</span><b data-t="36">Japoński Sąsiad</b><span class="m" data-t="37">~23 zł per order</span></a>
+<a class="chip" href="#ento-sushi"><span class="n">07</span><b data-t="38">Ento Sushi</b><span class="m" data-t="39">ROAS 6.29×</span></a>
+<a class="chip" href="#kiber-one"><span class="n">08</span><b data-t="40">Kiber One</b><span class="m" data-t="41">317 children enrolled</span></a>
+<a class="chip" href="#raccoon"><span class="n">09</span><b data-t="42">Raccoon School</b><span class="m" data-t="43">265 leads</span></a>
+<a class="chip" href="#detailing"><span class="n">10</span><b data-t="44">Detailing studios</b><span class="m" data-t="45">67 leads in month 1</span></a>
+</nav>
+<p class="nda" data-t="46"><b>…and many more cases.</b> <span>This is only a selection of my projects.</span></p>
+</section>
+<!-- 2 ABOUT -->
+<section class="slide" id="about">
+<span class="kicker" data-t="47">About me</span>
+<div class="about">
+<div class="panel">
+<h2 data-t="48">I build marketing that a business can measure, predict and scale.</h2>
+<p data-t="49">8+ years in performance marketing, SEO, PPC and CRM automation for B2C and B2B: e-commerce, beauty, food delivery, education, automotive services, travel and renewable energy. Today I head e-commerce and marketing at Fine Spirits: team, budgets, strategy and KPIs.</p>
+<p data-t="50">Data first: clean tracking, a clear funnel and creatives built around what the client really buys. Budget then goes only to what sells.</p>
+<p class="goal" data-t="51">My goal: projects where ads, analytics and product work as one system, and a team that grows it with me.</p>
+<div class="pills"><span class="pill" data-t="52">Meta Ads</span><span class="pill" data-t="53">Lead Ads &amp; Direct</span><span class="pill" data-t="54">Retargeting</span><span class="pill" data-t="55">Creative briefs</span><span class="pill" data-t="56">GA4 · GTM · Pixel</span><span class="pill" data-t="57">Google Ads</span><span class="pill" data-t="58">E-commerce &amp; SEO</span><span class="pill" data-t="59">Looker Studio</span><span class="pill" data-t="60">Team leadership</span></div>
+</div>
+<div class="panel">
+<span class="lbl2" data-t="61">E-commerce, food &amp; services</span>
+<div class="rows">
+<div><span data-t="62">Fine Spirits</span><span data-t="63">alcohol e-commerce, all of Poland</span></div>
+<div><span data-t="64">Sushi chain · Japoński Sąsiad · Ento Sushi</span><span data-t="65">food delivery, PL &amp; DE</span></div>
+<div><span data-t="66">Schools &amp; local services</span><span data-t="67">education, car detailing</span></div>
+</div>
+<span class="lbl2" data-t="68" style="margin-top:6px">Beauty &amp; wellness clients</span>
+<div class="rows">
+<div><span data-t="69">Brows Permanent Milano</span><span data-t="70">permanent make-up, Italy</span></div>
+<div><span data-t="71">Skin.Bar</span><span data-t="72">beauty salon, Warsaw</span></div>
+<div><span data-t="73">Hair &amp; beauty salon network</span><span data-t="74">hair &amp; beauty, Warsaw</span></div>
+<div><span data-t="75">Aery.studio</span><span data-t="76">stretching studio, Warsaw</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3 BROWS PERMANENT MILANO -->
+<section class="slide case" id="brows-milano">
+<div class="head">
+<div>
+<span class="kicker" data-t="77">Case 01 · Permanent make-up · Milan, Italy</span>
+<h2 data-t="78">Brows Permanent Milano</h2>
+<div class="tags"><span class="tag" data-t="79">Instagram + Facebook</span><span class="tag" data-t="80">6 months</span><span class="tag" data-t="81">Local Italian audience</span></div>
+</div>
+<div class="hero"><b class="num">€25,990</b><span data-t="82">revenue from €3,636 in ads</span></div>
+</div>
+<div class="cards">
+<div class="card"><span class="v num">615%</span><span class="k" data-t="83">ROMI</span><span class="s" data-t="84">(revenue − ad spend) ÷ ad spend</span></div>
+<div class="card"><span class="v num">7.1×</span><span class="k" data-t="85">ROAS</span><span class="s" data-t="86">€7.1 of revenue for every €1</span></div>
+<div class="card"><span class="v num">340+</span><span class="k" data-t="87">Conversations in Direct</span><span class="s" data-t="88">≈ €10.7 each</span></div>
+</div>
+<div class="case-actions">
+<button aria-controls="brows-milano-more" aria-expanded="false" class="more" type="button"><span class="when-closed" data-t="89">Show details</span><span class="when-open" data-t="90">Hide details</span></button>
+<a class="back" href="#cases"><span data-t="91">↑ All cases</span></a>
+</div>
+<div class="body" id="brows-milano-more">
+<div class="steps">
+<div class="step"><h3 data-t="92"><i>1</i>Task</h3><p data-t="93">Bring local Italian clients to a permanent make-up studio and sell its training courses, without an aggressive sales tone.</p></div>
+<div class="step"><h3 data-t="94"><i>2</i>What I did</h3><ul><li data-t="95">Trust-first ads: the working process, macro shots, before/after</li><li data-t="96">Traffic to Instagram, which warmed people up until they wrote to Direct</li><li data-t="97">Careful retargeting of profile visitors and video viewers</li></ul></div>
+<div class="step"><h3 data-t="98"><i>3</i>Result</h3><ul><li data-t="99"><b>€22,354</b> revenue after ad spend</li><li data-t="100"><b>€20,990</b> from procedures</li><li data-t="101"><b>€5,000</b> from courses: lips + 3 brow trainings</li></ul></div>
+</div>
+<div class="side">
+<span class="lbl" data-t="102">Best weeks by revenue</span>
+<div class="bars">
+<div class="bar"><span class="d" data-t="103">28 Apr – 9 May</span><span class="t"><i style="width:100%"></i></span><span class="a num">€3,150</span></div>
+<div class="bar"><span class="d" data-t="104">29 Mar – 4 Apr</span><span class="t"><i style="width:87%"></i></span><span class="a num">€2,750</span></div>
+<div class="bar"><span class="d" data-t="105">27 Dec – 10 Jan</span><span class="t"><i style="width:80%"></i></span><span class="a num">€2,520</span></div>
+<div class="bar"><span class="d" data-t="106">16 – 21 Mar</span><span class="t"><i style="width:65%"></i></span><span class="a num">€2,040</span></div>
+</div>
+<span class="lbl" data-t="107" style="margin-top:6px">Revenue split</span>
+<div aria-label="Procedures 81 percent, courses 19 percent" class="split" role="img"><i style="width:81%;background:var(--berry)"></i><i style="width:19%;background:#d9a3b6"></i></div>
+<div class="legend" data-t="L1"><b>81%</b> procedures · <b>19%</b> training courses</div>
+</div>
+</div>
+</section>
+<!-- 4 SKIN.BAR -->
+<section class="slide case" id="skin-bar">
+<div class="head">
+<div>
+<span class="kicker" data-t="108">Case 02 · Beauty salon · Warsaw</span>
+<h2 data-t="109">Skin.Bar</h2>
+<div class="tags"><span class="tag" data-t="110">Meta Ads</span><span class="tag" data-t="111">6 months</span><span class="tag" data-t="112">Lead Ads + remarketing</span></div>
+</div>
+<div class="hero"><b class="num">1,100+</b><span data-t="113">bookings in 6 months</span></div>
+</div>
+<div class="cards">
+<div class="card"><span class="v num">3.5–4.0×</span><span class="k" data-t="114">ROAS</span><span class="s" data-t="115">every 1 zł in ads returned 3.5–4 zł</span></div>
+<div class="card"><span class="v num">50–67 zł</span><span class="k" data-t="116">Cost per booking</span><span class="s" data-t="117">20–40 zł per lead</span></div>
+<div class="card"><span class="v num">+50%</span><span class="k" data-t="118">Conversion on services</span><span class="s" data-t="119">200–300 leads per month</span></div>
+</div>
+<div class="case-actions">
+<button aria-controls="skin-bar-more" aria-expanded="false" class="more" type="button"><span class="when-closed" data-t="120">Show details</span><span class="when-open" data-t="121">Hide details</span></button>
+<a class="back" href="#cases"><span data-t="122">↑ All cases</span></a>
+</div>
+<div class="body" id="skin-bar-more">
+<div class="steps">
+<div class="step"><h3 data-t="123"><i>1</i>Task</h3><p data-t="124">Fill the salon’s schedule with new clients for massage, facial and laser procedures at a cost per booking the salon can afford.</p></div>
+<div class="step"><h3 data-t="125"><i>2</i>What I did</h3><ul><li data-t="126">TOFU → MOFU → BOFU funnel, Lead Ads and dynamic remarketing</li><li data-t="127">Price-anchored offers with limited spots</li><li data-t="128">A quiz and blogger collaborations</li></ul></div>
+<div class="step"><h3 data-t="129"><i>3</i>Result</h3><ul><li data-t="130"><b>1,100+</b> bookings</li><li data-t="131"><b>3.5–4.0×</b> ROAS</li><li data-t="132">CTR <b>1.5–2.5%</b>, <b>1.5M+</b> impressions</li></ul></div>
+</div>
+<div class="side">
+<span class="lbl" data-t="133">Ad examples</span>
+<div class="creo">
+<img alt="SPA massage ad, 160 zł instead of 350 zł" loading="lazy" src="img/skinbar-1.jpg"/>
+<img alt="RF lifting ad, 200 zł, only 10 spots" loading="lazy" src="img/skinbar-4.jpg"/>
+<img alt="Mesotherapy ad, 550 zł instead of 900 zł" loading="lazy" src="img/skinbar-5.jpg"/>
+<img alt="Laser hair removal ad, 115 zł, 5 spots left" loading="lazy" src="img/skinbar-6.jpg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 5 SALON NETWORK -->
+<section class="slide case" id="salon-network">
+<div class="head">
+<div>
+<span class="kicker" data-t="134">Case 03 · Hair &amp; beauty salon network · Warsaw</span>
+<h2 data-t="135">Premium hair salon network</h2>
+<div class="tags"><span class="tag" data-t="136">Meta Ads</span><span class="tag" data-t="137">Lead generation</span><span class="tag ok" data-t="139">✓ KPI met</span></div>
+</div>
+<div class="hero"><b class="num">115+</b><span data-t="140">clients who came in for a service</span></div>
+</div>
+<div class="cards">
+<div class="card"><span class="v num">115</span><span class="k" data-t="141">Break-even KPI</span><span class="s" data-t="142">clients needed for ads to pay off</span></div>
+<div class="card"><span class="v num">$1.82</span><span class="k" data-t="143">Max cost per lead</span><span class="s" data-t="144">at the starting funnel</span></div>
+<div class="card"><span class="v num">1.8×</span><span class="k" data-t="145">More room per lead</span><span class="s" data-t="146">after improving booking and show-up</span></div>
+</div>
+<div class="case-actions">
+<button aria-controls="salon-network-more" aria-expanded="false" class="more" type="button"><span class="when-closed" data-t="147">Show details</span><span class="when-open" data-t="148">Hide details</span></button>
+<a class="back" href="#cases"><span data-t="149">↑ All cases</span></a>
+</div>
+<div class="body" id="salon-network-more">
+<div class="stack">
+<div class="steps">
+<div class="step"><h3 data-t="150"><i>1</i>Task</h3><p data-t="151">Make advertising pay for itself for a network of hair and beauty salons.</p></div>
+<div class="step"><h3 data-t="152"><i>2</i>What I did</h3><p data-t="153">Calculated the break-even point: <b>115 clients</b> who actually come in. Then set the maximum price per lead and per booking.</p></div>
+<div class="step"><h3 data-t="154"><i>3</i>Result</h3><p data-t="155">The <b>KPI was met</b>. Better booking and show-up rates let ads pay up to <b>$3.28 per lead</b> and still break even.</p></div>
+</div>
+<div class="side">
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th data-t="156">Funnel scenario</th><th data-t="157">Lead → booking</th><th data-t="158">Show-up</th><th data-t="159">Leads needed</th><th data-t="160">Max cost / lead</th></tr></thead>
+<tbody>
+<tr><td data-t="161">Starting point</td><td>39%</td><td>60%</td><td>494</td><td>$1.82</td></tr>
+<tr><td data-t="162">Better booking</td><td>50%</td><td>60%</td><td>380</td><td>$2.36</td></tr>
+<tr class="hl"><td data-t="163">Better booking + show-up</td><td>60%</td><td>70%</td><td>274</td><td>$3.28</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="side">
+<span class="lbl" data-t="164">Ad examples</span>
+<div class="creo">
+<img alt="New Year ad: book now and get a hair care sample as a gift" loading="lazy" src="img/salon_1.jpg"/>
+<img alt="New Year, new you: last slots of the year" loading="lazy" src="img/salon_2.jpg"/>
+<img alt="Monthly offer: cold botox, colouring and hair restoration at reduced prices" loading="lazy" src="img/salon_3.jpg"/>
+<img alt="Polish ad: hair care and haircut for 120 zł instead of 200 zł" loading="lazy" src="img/salon_4.jpg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 6 FINE SPIRITS -->
+<section class="slide case" id="fine-spirits">
+<div class="head">
+<div>
+<span class="kicker" data-t="165">Case 04 · Alcohol e-commerce · Delivery across Poland</span>
+<h2 data-t="166">Fine Spirits</h2>
+<div class="tags"><span class="tag" data-t="167">Head of E-commerce &amp; Marketing · since Jul 2025</span><span class="tag" data-t="168">WooCommerce · 2,700+ products</span><span class="tag" data-t="169">Meta Ads · Google Ads · SEO</span></div>
+</div>
+<div class="hero"><b class="num">+151%</b><span data-t="170">online revenue, Jun–Aug 2026 vs 2025</span></div>
+</div>
+<div class="cards">
+<div class="card"><span class="v num">+124%</span><span class="k" data-t="171">Online orders</span><span class="s" data-t="172">year over year, Jun–Aug</span></div>
+<div class="card"><span class="v num">650 zł</span><span class="k" data-t="173">Average order value</span><span class="s" data-t="174">premium wine and spirits</span></div>
+<div class="card"><span class="v num">+186%</span><span class="k" data-t="175">Total company revenue</span><span class="s" data-t="176">241K → 688K zł gross, AOV +75%, orders +63%</span></div>
+</div>
+<div class="case-actions">
+<button aria-controls="fine-spirits-more" aria-expanded="false" class="more" type="button"><span class="when-closed" data-t="177">Show details</span><span class="when-open" data-t="178">Hide details</span></button>
+<a class="back" href="#cases"><span data-t="179">↑ All cases</span></a>
+</div>
+<div class="body" id="fine-spirits-more">
+<div class="steps">
+<div class="step"><h3 data-t="180"><i>1</i>Task</h3><p data-t="181">Grow sales of an alcohol online store that delivers across Poland, plus the shop, B2B and HoReCa, within strict alcohol ad policies. Lead the marketing team and contractors.</p></div>
+<div class="step"><h3 data-t="182"><i>2</i>What I did</h3><ul><li data-t="183">Meta Ads full funnel: catalog of 2,700+ products, product sets, DPA, retargeting, CAPI</li><li data-t="184">Google Ads: Search, brand protection, delivery queries</li><li data-t="185">New site navigation: 88 hidden gift boxes back in sight</li></ul></div>
+<div class="step"><h3 data-t="186"><i>3</i>Growth &amp; retention</h3><ul><li data-t="187">Mobile app on the business side: loyalty, app-only offers, 66 screens reviewed, ASO</li><li data-t="188">Seasonal calendar: Black Friday, Christmas, corporate gifts</li><li data-t="189">Monthly KPI dashboards for management</li></ul></div>
+</div>
+<div class="side">
+<span class="lbl" data-t="190">New channels</span>
+<div class="tbl-wrap">
+<table class="tbl">
+<tbody>
+<tr class="hl"><td data-t="191">Wolt + Bolt Food</td><td data-t="192">~10K zł/mo</td></tr>
+<tr><td data-t="193">Share of all orders</td><td data-t="194">14% in 3 mo</td></tr>
+</tbody>
+</table>
+</div>
+<span class="lbl" data-t="195">SEO, first 6 weeks</span>
+<div class="tbl-wrap">
+<table class="tbl">
+<tbody>
+<tr><td data-t="196">Organic clicks</td><td>+18%</td></tr>
+<tr><td data-t="197">Organic traffic</td><td>+27%</td></tr>
+<tr><td data-t="198">Ranking keywords</td><td>+27%</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<!-- 7 SUSHI CHAIN -->
+<section class="slide case" id="sushi-chain">
+<div class="head">
+<div>
+<span class="kicker" data-t="199">Case 05 · Food delivery · 15+ cities, Poland</span>
+<h2 data-t="200">Sushi delivery chain · 15+ cities</h2>
+<div class="tags"><span class="tag" data-t="201">Meta Ads targeting</span><span class="tag" data-t="202">~1 year</span><span class="tag" data-t="203">E-commerce · ROAS as main KPI</span></div>
+</div>
+<div class="hero"><b class="num">$1.35M</b><span data-t="204">revenue in 15+ cities · 5,411,766 zł</span></div>
+</div>
+<div class="cards">
+<div class="card"><span class="v num">5.27×</span><span class="k" data-t="205">Average ROAS</span><span class="s" data-t="206">up to 15.45× in the best campaigns</span></div>
+<div class="card"><span class="v num">35,060</span><span class="k" data-t="207">Purchases on the website</span><span class="s" data-t="208">8.2M people reached</span></div>
+<div class="card"><span class="v num">$256K</span><span class="k" data-t="209">Ad budget managed</span><span class="s">1,026,655 zł</span></div>
+</div>
+<div class="case-actions">
+<button aria-controls="sushi-chain-more" aria-expanded="false" class="more" type="button"><span class="when-closed" data-t="210">Show details</span><span class="when-open" data-t="211">Hide details</span></button>
+<a class="back" href="#cases"><span data-t="212">↑ All cases</span></a>
+</div>
+<div class="body" id="sushi-chain-more">
+<div class="steps">
+<div class="step"><h3 data-t="213"><i>1</i>Task</h3><p data-t="214">Grow online orders for a premium sushi brand in 15+ Polish cities and keep ROAS high every day, not only at weekends.</p></div>
+<div class="step"><h3 data-t="215"><i>2</i>What I did</h3><ul><li data-t="216">Full funnel TOFU → MOFU → BOFU: ad → website → online order</li><li data-t="217">Catalog campaigns split by city, ads in Polish</li><li data-t="218">Rebuilt remarketing with GA4 + CRM audiences</li></ul></div>
+<div class="step"><h3 data-t="219"><i>3</i>Result</h3><ul><li data-t="220">Weekday ROAS up from <b>2–3×</b> to a stable <b>4–6×</b></li><li data-t="221">Cost per purchase down from <b>45 zł</b> to <b>21–29 zł</b></li><li data-t="222">City data helped open <b>3 new locations</b>: Szczecin, Białystok, Lublin</li></ul></div>
+</div>
+<div class="side">
+<span class="lbl" data-t="223">ROAS by city, catalog campaigns</span>
+<div class="bars citybars">
+<div class="bar"><span class="d" data-t="224">Poznań</span><span class="t"><i style="width:100%"></i></span><span class="a num">10.35</span></div>
+<div class="bar"><span class="d" data-t="225">Lublin</span><span class="t"><i style="width:88%"></i></span><span class="a num">9.09</span></div>
+<div class="bar"><span class="d" data-t="226">Białystok</span><span class="t"><i style="width:75%"></i></span><span class="a num">7.76</span></div>
+<div class="bar"><span class="d" data-t="227">Katowice</span><span class="t"><i style="width:65%"></i></span><span class="a num">6.74</span></div>
+<div class="bar"><span class="d" data-t="228">Gdynia</span><span class="t"><i style="width:64%"></i></span><span class="a num">6.65</span></div>
+<div class="bar"><span class="d" data-t="229">Szczecin</span><span class="t"><i style="width:63%"></i></span><span class="a num">6.51</span></div>
+<div class="bar"><span class="d" data-t="230">Gdańsk</span><span class="t"><i style="width:56%"></i></span><span class="a num">5.81</span></div>
+<div class="bar"><span class="d" data-t="231">Warsaw</span><span class="t"><i style="width:53%"></i></span><span class="a num">5.49</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7b SUSHI CHAIN, AD ACCOUNT -->
+<section class="slide case-extra" data-parent="sushi-chain" id="sushi-chain-account">
+<span class="kicker" data-t="232">Case 05 · Sushi delivery chain · from the ad account</span>
+<h2 class="h2s" data-t="233">What drove the results</h2>
+<div class="acct">
+<figure class="shot">
+<img alt="Meta Ads Manager: catalog campaigns by city, average ROAS 5.26, 661K zł spent in 6 months" loading="lazy" src="img/sushi_ads_manager.png"/>
+<figcaption data-t="234">Meta Ads Manager, 6-month snapshot: campaigns by city, average ROAS 5.26</figcaption>
+</figure>
+<div class="insights">
+<div class="ins"><h3 data-t="235">Remarketing</h3><p data-t="236">The key decision. Before the rebuild weekday ROAS jumped around 2–3×. After it, 4–6× on weekdays and a steady result all month.</p></div>
+<div class="ins"><h3 data-t="237">Formats</h3><p data-t="238">UGC and motion video worked best. Instagram traffic ran in parallel as an extra sales channel.</p></div>
+<div class="ins"><h3 data-t="239">Seasonality</h3><p data-t="240">Friday to Sunday are the order peaks. Budget boosts for Black Friday and New Year. Sushi has no dead season.</p></div>
+<div class="ins"><h3 data-t="241">Approach</h3><p data-t="242">No magic tricks: constant testing of audiences, visuals and copy to find the winning combinations, with ROAS as the main KPI.</p></div>
+</div>
+</div>
+</section>
+<!-- 8 JAPONSKI SASIAD -->
+<section class="slide case" id="japonski-sasiad">
+<div class="head">
+<div>
+<span class="kicker" data-t="243">Case 06 · New sushi brand from scratch · Warsaw</span>
+<h2 data-t="244">Japoński Sąsiad</h2>
+<div class="tags"><span class="tag" data-t="245">Meta Ads</span><span class="tag" data-t="246">Brand launch</span><span class="tag" data-t="247">Bloggers · loyalty · website</span></div>
+</div>
+<div class="hero"><b class="num">~23 zł</b><span data-t="248">cost per order in Ads Manager</span></div>
+</div>
+<div class="cards">
+<div class="card"><span class="v num">~200 zł</span><span class="k" data-t="249">Average check</span><span class="s" data-t="250">each order pays back the ad many times over</span></div>
+<div class="card"><span class="v num">+2</span><span class="k" data-t="251">New restaurants</span><span class="s" data-t="252">a second one in Warsaw, Wrocław opening</span></div>
+<div class="card"><span class="v num">$24,000</span><span class="k" data-t="253">Revenue of the first restaurant</span><span class="s" data-t="254">during the pilot</span></div>
+</div>
+<div class="case-actions">
+<button aria-controls="japonski-sasiad-more" aria-expanded="false" class="more" type="button"><span class="when-closed" data-t="255">Show details</span><span class="when-open" data-t="256">Hide details</span></button>
+<a class="back" href="#cases"><span data-t="257">↑ All cases</span></a>
+</div>
+<div class="body" id="japonski-sasiad-more">
+<div class="steps">
+<div class="step"><h3 data-t="258"><i>1</i>Task</h3><p data-t="259">Launch a brand-new sushi brand in Warsaw from zero and make delivery orders profitable.</p></div>
+<div class="step"><h3 data-t="260"><i>2</i>What I did</h3><ul><li data-t="261">Built the brand from scratch: took part in launching the website and the loyalty system</li><li data-t="262">Instagram profile and ads with close-up food, sets with a price and an order button</li><li data-t="263">Collaborations with bloggers</li></ul></div>
+<div class="step"><h3 data-t="264"><i>3</i>Result</h3><ul><li data-t="265">An order costs <b>~23 zł</b> with a <b>~200 zł</b> average check: ads run in profit</li><li data-t="266"><b>2 more restaurants</b>: a second one in Warsaw and one opening in Wrocław</li></ul></div>
+</div>
+<div class="side">
+<span class="lbl" data-t="267">Ad examples</span>
+<div class="creo">
+<img alt="Feed ad: looking for big tasty sushi" loading="lazy" src="img/sushi_3.jpg"/>
+<img alt="Feed ad for the Dragon sushi set" loading="lazy" src="img/sushi_6.jpg"/>
+<img alt="Story styled as a phone reminder to order sushi" loading="lazy" src="img/sushi_7.jpg"/>
+<img alt="Feed ad: careful, very tasty" loading="lazy" src="img/sushi_5.jpg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 9 ENTO SUSHI -->
+<section class="slide case" id="ento-sushi">
+<div class="head">
+<div>
+<span class="kicker" data-t="268">Case 07 · Premium sushi delivery · Frankfurt, Germany</span>
+<h2 data-t="269">Ento Sushi</h2>
+<div class="tags"><span class="tag" data-t="270">Meta Ads</span><span class="tag" data-t="271">GA4 · Looker Studio</span><span class="tag" data-t="272">AI bot in Instagram Direct</span></div>
+</div>
+<div class="hero"><b class="num">6.29×</b><span data-t="273">ROAS in the first month after the fixes</span></div>
+</div>
+<div class="cards">
+<div class="card"><span class="v num">€5,190</span><span class="k" data-t="274">Revenue from ads</span><span class="s" data-t="275">from €825 ad spend in one month</span></div>
+<div class="card"><span class="v num">85</span><span class="k" data-t="276">Purchases from ads</span><span class="s" data-t="277">574 add-to-carts, 28,468 people reached</span></div>
+<div class="card"><span class="v num">$5.81</span><span class="k" data-t="278">CPM</span><span class="s" data-t="279">below the German food average of $8–15</span></div>
+</div>
+<div class="case-actions">
+<button aria-controls="ento-sushi-more" aria-expanded="false" class="more" type="button"><span class="when-closed" data-t="280">Show details</span><span class="when-open" data-t="281">Hide details</span></button>
+<a class="back" href="#cases"><span data-t="282">↑ All cases</span></a>
+</div>
+<div class="body" id="ento-sushi-more">
+<div class="steps">
+<div class="step"><h3 data-t="283"><i>1</i>Task</h3><p data-t="284">Take over the ad account of a premium sushi delivery in Frankfurt, fix the analytics and grow orders on a small budget.</p></div>
+<div class="step"><h3 data-t="285"><i>2</i>What I did</h3><ul><li data-t="286">Full audit, then all data in one Looker Studio dashboard the client can read at a glance</li><li data-t="287">Rebuilt GA4 and tracking so every order is counted correctly</li><li data-t="288">An AI ordering bot in Instagram Direct, built and tested with the developers</li></ul></div>
+<div class="step"><h3 data-t="289"><i>3</i>Strategy</h3><ul><li data-t="290">Several directions pushed at once, not only cold and warm</li><li data-t="291">Separate retargeting for people who added to cart but did not buy</li><li data-t="292">Ads that lead straight to Direct, where the bot takes the order</li></ul></div>
+</div>
+<div class="side">
+<span class="lbl" data-t="293">Ad examples</span>
+<div class="creo mosaic">
+<img alt="German ad: so much fish that even the dragon gets full, Philadelphia set" loading="lazy" src="img/ento_1.jpg"/>
+<img alt="German ad: Der Frische roll with avocado, strawberry and shrimp" loading="lazy" src="img/ento_2.jpg"/>
+<img alt="German ad: you need no reason for sushi, Friends Set of 54 pieces" loading="lazy" src="img/ento_3.jpg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 9b ENTO RESULTS -->
+<section class="slide case-extra" data-parent="ento-sushi" id="ento-results">
+<span class="kicker" data-t="294">Case 07 · Ento Sushi · one month after the fixes</span>
+<h2 class="h2s" data-t="295">What the client sees every day</h2>
+<div class="acct2">
+<div class="col">
+<figure class="shot">
+<img alt="Client dashboard: website block from GA4 and Meta ads block, ROAS 6.29, 85 purchases" loading="lazy" src="img/ento_dashboard.png"/>
+<figcaption data-t="296">Looker Studio dashboard: website (GA4) and Meta ads in one view</figcaption>
+</figure>
+<div class="ins"><h3 data-t="297">Ento vs market</h3>
+<div class="tbl-wrap">
+<table class="tbl">
+<thead><tr><th data-t="298">Metric</th><th data-t="299">Ento</th><th data-t="300">Market</th></tr></thead>
+<tbody>
+<tr class="hl"><td data-t="301">Cost per request</td><td>$6.50</td><td>~$27.7</td></tr>
+<tr><td data-t="302">CPM</td><td>$5.81</td><td>$8–15</td></tr>
+<tr><td data-t="303">ROAS</td><td>6.29</td><td>1.56</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="col">
+<figure class="shot">
+<img alt="Meta Ads Manager: campaigns by direction, average ROAS 6.29, 85 purchases, 574 add-to-carts" loading="lazy" src="img/ento_ads_manager.png"/>
+<figcaption data-t="304">Meta Ads Manager: separate campaigns for each direction</figcaption>
+</figure>
+<div class="ins"><h3 data-t="305">What worked</h3><ul><li data-t="306">Retargeting of cart abandoners: <b>ROAS 12.79</b>, 41 purchases</li><li data-t="307">Purchase campaign: <b>ROAS 4.91</b>, 39 purchases</li><li data-t="308">Website: <b>297 orders</b> and <b>€17,635</b> revenue in the month</li></ul></div>
+</div>
+</div>
+</section>
+<!-- 10 KIBER ONE -->
+<section class="slide case" id="kiber-one">
+<div class="head">
+<div>
+<span class="kicker" data-t="309">Case 08 · Education · kids 6–14</span>
+<h2 data-t="310">Kiber One programming school</h2>
+<div class="tags"><span class="tag" data-t="311">Facebook + Google Ads</span><span class="tag" data-t="312">Lead generation</span><span class="tag" data-t="313">Free trial lesson</span></div>
+</div>
+<div class="hero"><b class="num">317</b><span data-t="314">children enrolled in classes</span></div>
+</div>
+<div class="cards">
+<div class="card"><span class="v num">838</span><span class="k" data-t="315">Leads from Facebook</span><span class="s" data-t="316">993,548 people reached</span></div>
+<div class="card"><span class="v num">$3.29</span><span class="k" data-t="317">Cost per lead</span><span class="s" data-t="318">Facebook Lead Ads</span></div>
+<div class="card"><span class="v num">38%</span><span class="k" data-t="319">Leads → enrollment</span><span class="s" data-t="320">more than 1 in 3 leads joined</span></div>
+</div>
+<div class="case-actions">
+<button aria-controls="kiber-one-more" aria-expanded="false" class="more" type="button"><span class="when-closed" data-t="321">Show details</span><span class="when-open" data-t="322">Hide details</span></button>
+<a class="back" href="#cases"><span data-t="323">↑ All cases</span></a>
+</div>
+<div class="body" id="kiber-one-more">
+<div class="steps">
+<div class="step"><h3 data-t="324"><i>1</i>Task</h3><p data-t="325">Fill groups at a children’s programming school with a steady flow of parents ready to enrol.</p></div>
+<div class="step"><h3 data-t="326"><i>2</i>What I did</h3><ul><li data-t="327">Free trial lesson as the lead magnet</li><li data-t="328">Ads that speak to the parent: “your child games all day, let them build games”</li><li data-t="329">Facebook Lead Ads plus Google Ads</li></ul></div>
+<div class="step"><h3 data-t="330"><i>3</i>Result</h3><ul><li data-t="331"><b>838</b> leads at <b>$3.29</b></li><li data-t="332"><b>317</b> children enrolled</li><li data-t="333"><b>3.1M</b> impressions, <b>10,740</b> unique clicks</li></ul></div>
+</div>
+<div class="side">
+<span class="lbl" data-t="334">Ad examples</span>
+<div class="creo">
+<img alt="Coding for kids ad with a robot" loading="lazy" src="img/prog_1.jpg"/>
+<img alt="Ad: we are looking for future programmers aged 6–14" loading="lazy" src="img/prog_3.jpg"/>
+<img alt="Ad: future programmers in Warsaw" loading="lazy" src="img/prog_4.jpg"/>
+<img alt="Ad: change how your child uses the computer" loading="lazy" src="img/prog_5.jpg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 10 RACCOON SCHOOL -->
+<section class="slide case" id="raccoon">
+<div class="head">
+<div>
+<span class="kicker" data-t="335">Case 09 · Language school · Kyiv, Warsaw, Wrocław</span>
+<h2 data-t="336">Raccoon School</h2>
+<div class="tags"><span class="tag" data-t="337">Meta Ads</span><span class="tag" data-t="338">3 months</span><span class="tag" data-t="339">Kids &amp; adults · 6 offers</span></div>
+</div>
+<div class="hero"><b class="num">265</b><span data-t="340">leads in 3 months</span></div>
+</div>
+<div class="cards">
+<div class="card"><span class="v num">$8.10 → $6.96</span><span class="k" data-t="341">Cost per lead</span><span class="s" data-t="342">−14% from month 1 to month 3</span></div>
+<div class="card"><span class="v num">124,952</span><span class="k" data-t="343">People reached</span><span class="s" data-t="344">in the first month</span></div>
+<div class="card"><span class="v num">400</span><span class="k" data-t="345">New followers</span><span class="s" data-t="346">$0.39 each, 40% of visitors followed</span></div>
+</div>
+<div class="case-actions">
+<button aria-controls="raccoon-more" aria-expanded="false" class="more" type="button"><span class="when-closed" data-t="347">Show details</span><span class="when-open" data-t="348">Hide details</span></button>
+<a class="back" href="#cases"><span data-t="349">↑ All cases</span></a>
+</div>
+<div class="body" id="raccoon-more">
+<div class="steps">
+<div class="step"><h3 data-t="350"><i>1</i>Task</h3><p data-t="351">Bring sign-ups for free trial lessons: English for kids and adults, Polish for adults, a book club, in three cities.</p></div>
+<div class="step"><h3 data-t="352"><i>2</i>What I did</h3><ul><li data-t="353">7 audiences tested, from parents’ interests to Meta Advantage+</li><li data-t="354">62 ads: static and animated static won</li><li data-t="355">A longer lead form to raise lead quality</li><li data-t="356">Daily reporting sheet with the full funnel</li></ul></div>
+<div class="step"><h3 data-t="357"><i>3</i>Result</h3><ul><li data-t="358">Leads per month: <b>75 → 97 → 93</b></li><li data-t="359">Budget focused on the city with the best results</li></ul></div>
+</div>
+<div class="side">
+<span class="lbl" data-t="360">Ad examples</span>
+<div class="creo raw">
+<img alt="Raccoon School ads: Polish language, studying abroad" loading="lazy" src="img/racc_a.jpg"/>
+<img alt="Promoted Reels for Raccoon School" loading="lazy" src="img/racc_b.jpg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 11 DETAILING -->
+<section class="slide case" id="detailing">
+<div class="head">
+<div>
+<span class="kicker" data-t="361">Case 10 · Car detailing · Warsaw</span>
+<h2 data-t="362">Two detailing studios</h2>
+<div class="tags"><span class="tag" data-t="363">Meta Ads</span><span class="tag" data-t="364">New ad accounts</span><span class="tag" data-t="365">Lead forms + Instagram growth</span></div>
+</div>
+<div class="hero"><b class="num">67</b><span data-t="366">leads in the first month</span></div>
+</div>
+<div class="cards">
+<div class="card"><span class="v num">100</span><span class="k" data-t="367">Ads tested</span><span class="s" data-t="368">video and static, with and without price</span></div>
+<div class="card"><span class="v num">3,048</span><span class="k" data-t="369">Instagram profile visits</span><span class="s" data-t="370">from 0.31 zł / $0.16 per visit</span></div>
+<div class="card"><span class="v num">41,434</span><span class="k" data-t="371">People reached</span><span class="s" data-t="372">one studio, first month</span></div>
+</div>
+<div class="case-actions">
+<button aria-controls="detailing-more" aria-expanded="false" class="more" type="button"><span class="when-closed" data-t="373">Show details</span><span class="when-open" data-t="374">Hide details</span></button>
+<a class="back" href="#cases"><span data-t="375">↑ All cases</span></a>
+</div>
+<div class="body" id="detailing-more">
+<div class="steps">
+<div class="step"><h3 data-t="376"><i>1</i>Task</h3><p data-t="377">Launch Meta Ads from zero for two car detailing studios: PPF film, polishing, ceramic coating, car wash.</p></div>
+<div class="step"><h3 data-t="378"><i>2</i>What I did</h3><ul><li data-t="379">Warmed up new ad accounts to avoid blocks</li><li data-t="380">Tested 3 audience types: Advantage+, broad, luxury car interests</li><li data-t="381">Moved from expensive PPF to entry offers that bring first visits</li></ul></div>
+<div class="step"><h3 data-t="382"><i>3</i>Result</h3><ul><li data-t="383">Winning offer found in month one: <b>polishing for 999 zł</b> with limited spots and a deadline</li><li data-t="384">Best audience: car brand interests</li><li data-t="385">Polishing + ceramic: <b>27 leads</b> at $13.80 in one month</li></ul></div>
+</div>
+<div class="side">
+<span class="lbl" data-t="386">Ad examples</span>
+<div class="creo raw">
+<img alt="Detailing ads: polishing for 999 zł, car wash" loading="lazy" src="img/detail_a.jpg"/>
+<img alt="Detailing ads: protect your car, polishing and ceramic coating" loading="lazy" src="img/detail_b.jpg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- 12 MORE RESULTS -->
+<section class="slide" id="more">
+<span class="kicker" data-t="387">More results</span>
+<h2 class="h2s" data-t="388">Other projects in short</h2>
+<p class="sub" data-t="389">And many more cases beyond this selection.</p>
+<div class="grid6">
+<div class="mini">
+<span class="k2" data-t="390">Education · kids 5–14</span>
+<h3 data-t="391">English language school</h3>
+<div class="big"><div><b class="num">38</b><span data-t="392">inquiries, avg $9.30</span></div><div><b class="num">90%</b><span data-t="393">high-quality leads</span></div></div>
+<p data-t="394">Social media launched from scratch: strategy, competitor analysis and creatives. Switched from Conversions to Lead Ads in month two and got 15 more inquiries at $7.78.</p>
+</div>
+<div class="mini">
+<span class="k2" data-t="395">Personal brand · Instagram</span>
+<h3 data-t="396">Freelance blogger</h3>
+<div class="big"><div><b class="num">~2,300</b><span data-t="397">new followers</span></div><div><b class="num">$0.22</b><span data-t="398">per follower</span></div></div>
+<p data-t="399">Personality brief and niche analysis, profile rebuild, removal of bot followers, a “Freelancing from scratch” checklist and a page with consultation prices.</p>
+</div>
+<div class="mini">
+<span class="k2" data-t="400">Instagram design</span>
+<h3 data-t="401">Instagram profile design</h3>
+<div class="big"><div><b class="num">3</b><span data-t="402">profiles designed</span></div></div>
+<p data-t="403">A single visual style for each profile: a lash and brow artist, a tableware brand and a restaurant.</p>
+</div>
+</div>
+</section>
+<!-- 13 PLANS -->
+<section class="slide" id="plans">
+<span class="kicker" data-t="404">Strategy</span>
+<h2 class="h2s" data-t="405">Every project starts with a plan, and goes further</h2>
+<p class="sub" data-t="406" style="max-width:72ch">Every client gets a promotion plan, a competitor analysis and an audit of the ad account before the first ad goes live. I map the audience and the offers and agree on KPIs. A few examples:</p>
+<div class="grid6">
+<div class="mini">
+<span class="k2" data-t="407">Aerostretching studio · Warsaw</span>
+<h3 data-t="408">Aery.studio</h3>
+<ul class="plist"><li data-t="409">2 audience segments, beginners and experienced, with their pains and goals</li><li data-t="410">Ads of 3 competitor studios analyzed</li><li data-t="411">Trial class offers: 59 zł and 39 zł</li><li data-t="412">Budget 3,000 zł with a forecast of 90–150 leads</li></ul>
+</div>
+<div class="mini">
+<span class="k2" data-t="413">Travel agency · Poland</span>
+<h3 data-t="414">Swtours</h3>
+<ul class="plist"><li data-t="415">Launch from a new account with no history</li><li data-t="416">Audience: students 18–26 looking for budget tours</li><li data-t="417">Goals: brand awareness, new followers, first clients</li></ul>
+</div>
+<div class="mini">
+<span class="k2" data-t="418">Language school · 3 cities</span>
+<h3 data-t="419">Raccoon School</h3>
+<ul class="plist"><li data-t="420">Separate offers for kids and adults in each city</li><li data-t="421">Funnel KPI: leads, bookings and show-ups needed for 30 sales</li><li data-t="422">Daily reporting sheet with cost per lead and per booking</li></ul>
+</div>
+</div>
+</section>
+<!-- 14 PROCESS -->
+<section class="slide" id="process">
+<span class="kicker" data-t="423">How we work together</span>
+<h2 class="h2s" data-t="424">From audit to steady, predictable growth</h2>
+<div class="process">
+<div class="step"><h3 data-t="425"><i>1</i>Audit</h3><p data-t="426">Ad account, Instagram profile, offers, prices and tracking. What already works and where money leaks.</p></div>
+<div class="step"><h3 data-t="427"><i>2</i>Plan &amp; KPI</h3><p data-t="428">Break-even point, funnel KPIs, audiences, budget split and the offer for each product or service.</p></div>
+<div class="step"><h3 data-t="429"><i>3</i>Creatives</h3><p data-t="430">Concepts and briefs built around what the client buys: a clear offer, a price and one action.</p></div>
+<div class="step"><h3 data-t="431"><i>4</i>Launch &amp; test</h3><p data-t="432">Pixel and events set up. A/B tests of creatives, copy and audiences.</p></div>
+<div class="step"><h3 data-t="433"><i>5</i>Scale &amp; report</h3><p data-t="434">Budget moves to what sells. Regular reports on leads, sales, cost per result, ROAS and ROMI.</p></div>
+</div>
+</section>
+<!-- 15 CONTACT -->
+<section class="slide contact" id="contact">
+<span class="kicker" data-t="435">Contact</span>
+<h2 data-t="436">Let’s grow your <em>revenue.</em></h2>
+<p class="sub" data-t="437" style="font-size:17px;max-width:54ch">Tell me about your business and your goals. I will reply with a short audit and the first ideas for growth.</p>
+<div class="contacts">
+<div><span data-t="438">Email</span><b>valeriia.honcharuk.marketing@gmail.com</b></div>
+<div><span data-t="439">Phone</span><b>+48 792 763 312</b></div>
+<div><span data-t="440">Telegram</span><a href="https://t.me/vasilisa_29" rel="noopener" target="_blank">@vasilisa_29</a></div>
+<div><span data-t="441">LinkedIn</span><a href="https://www.linkedin.com/in/valeriia-honcharuk-836745225/" rel="noopener" target="_blank">valeriia-honcharuk</a></div>
+</div>
+</section>
+<div class="dock" id="dock">
+<button type="button" class="dock-btn" aria-expanded="false" aria-controls="sheet"><span class="dock-ico" aria-hidden="true">☰</span><span data-t="24">Cases</span><span class="dock-cur"></span></button>
+</div>
+<div class="sheet-bg" id="sheet-bg" hidden></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Cases" hidden>
+<div class="sheet-head"><b data-t="24">Cases</b><nav class="lang" aria-label="Language (menu)">
+  <button type="button" data-l="en" aria-pressed="true">EN</button>
+  <button type="button" data-l="ru" aria-pressed="false">RU</button>
+  <button type="button" data-l="pl" aria-pressed="false">PL</button>
+</nav><button type="button" class="sheet-x" aria-label="Close">×</button></div>
+<nav class="sheet-list" aria-label="Cases">
+<a class="tab" href="#brows-milano"><span class="n">01</span><b data-t="26">Brows Permanent Milano</b><span class="m" data-t="27">615% ROMI</span></a>
+<a class="tab" href="#skin-bar"><span class="n">02</span><b data-t="28">Skin.Bar</b><span class="m" data-t="29">1,100+ bookings</span></a>
+<a class="tab" href="#salon-network"><span class="n">03</span><b data-t="30">Hair salon network</b><span class="m" data-t="31">115+ clients, KPI met</span></a>
+<a class="tab" href="#fine-spirits"><span class="n">04</span><b data-t="32">Fine Spirits</b><span class="m" data-t="33">+151% online revenue</span></a>
+<a class="tab" href="#sushi-chain"><span class="n">05</span><b data-t="34">Sushi delivery chain</b><span class="m" data-t="35">$1.35M revenue</span></a>
+<a class="tab" href="#japonski-sasiad"><span class="n">06</span><b data-t="36">Japoński Sąsiad</b><span class="m" data-t="37">~23 zł per order</span></a>
+<a class="tab" href="#ento-sushi"><span class="n">07</span><b data-t="38">Ento Sushi</b><span class="m" data-t="39">ROAS 6.29×</span></a>
+<a class="tab" href="#kiber-one"><span class="n">08</span><b data-t="40">Kiber One</b><span class="m" data-t="41">317 children enrolled</span></a>
+<a class="tab" href="#raccoon"><span class="n">09</span><b data-t="42">Raccoon School</b><span class="m" data-t="43">265 leads</span></a>
+<a class="tab" href="#detailing"><span class="n">10</span><b data-t="44">Detailing studios</b><span class="m" data-t="45">67 leads in month 1</span></a>
+<a class="tab tab-more" href="#more"><span data-t="11">+ More</span></a>
+</nav>
+</div>
+</main>
+<script>
+/* Language switch: English is the source text in the page; RU / PL come from this table, keyed by data-t. */
+const T = {"46": ["<b>…и ещё много кейсов.</b> <span>Здесь только часть моих проектов.</span>", "<b>…i wiele innych case studies.</b> <span>To tylko wybrane projekty.</span>"], "1": ["Brows Milano", "Brows Milano"], "3": ["Сеть салонов", "Sieć salonów"], "5": ["Сеть суши", "Sieć sushi"], "9": ["Raccoon", "Raccoon"], "10": ["Детейлинг", "Detailing"], "11": ["+ Ещё", "+ Więcej"], "12": ["Портфолио · Performance-маркетинг · 2026", "Portfolio · Performance marketing · 2026"], "13": ["Превращаю рекламный бюджет в <em>выручку.</em>", "Zamieniam budżet reklamowy w <em>przychód.</em>"], "14": ["Head of E-commerce &amp; Marketing, более 8 лет в performance-маркетинге. Строю полные воронки в Meta и Google, настраиваю аналитику, которая показывает, куда уходит каждый злотый, и масштабирую то, что продаёт: от салонов красоты до e-commerce и сетей доставки в 15+ городах.", "Head of E-commerce &amp; Marketing z ponad 8-letnim doświadczeniem w performance marketingu. Buduję pełne lejki w Meta i Google, wdrażam analitykę, która pokazuje, na co idzie każda złotówka, i skaluję to, co sprzedaje: od salonów beauty po e-commerce i sieci gastronomiczne w 15+ miastach."], "15": ["Head of E-commerce &amp; Marketing · Варшава", "Head of E-commerce &amp; Marketing · Warszawa"], "16": ["онлайн-выручки", "przychodu online"], "17": ["алкогольный e-commerce, год к году", "e-commerce alkoholowy, rok do roku"], "18": ["выручки с рекламы", "przychodu z reklam"], "19": ["сеть суши, 15+ городов, ROAS 5,27×", "sieć sushi, 15+ miast, ROAS 5,27×"], "21": ["перманентный макияж, Милан", "makijaż permanentny, Mediolan"], "22": ["записей", "rezerwacji"], "23": ["салон красоты, Варшава", "salon beauty, Warszawa"], "24": ["Кейсы", "Case studies"], "25": ["Выберите кейс — он сразу откроется", "Wybierz case — od razu się otworzy"], "27": ["ROMI 615%", "ROMI 615%"], "29": ["1 100+ записей", "1 100+ rezerwacji"], "30": ["Сеть салонов красоты", "Sieć salonów fryzjerskich"], "31": ["115+ клиентов, KPI выполнен", "115+ klientów, KPI osiągnięte"], "33": ["+151% онлайн-выручки", "+151% przychodu online"], "34": ["Сеть доставки суши", "Sieć dostawy sushi"], "35": ["$1,35 млн выручки", "1,35 mln $ przychodu"], "37": ["~23 zł за заказ", "~23 zł za zamówienie"], "39": ["ROAS 6,29×", "ROAS 6,29×"], "41": ["317 детей записались", "317 zapisanych dzieci"], "43": ["265 лидов", "265 leadów"], "44": ["Детейлинг-студии", "Studia detailingu"], "45": ["67 лидов за 1-й месяц", "67 leadów w 1. miesiącu"], "47": ["Обо мне", "O mnie"], "48": ["Строю маркетинг, который бизнес может измерить, спрогнозировать и масштабировать.", "Buduję marketing, który firma może zmierzyć, przewidzieć i skalować."], "49": ["Более 8 лет в performance-маркетинге, SEO, PPC и CRM-автоматизации для B2C и B2B: e-commerce, beauty, доставка еды, образование, автосервис, туризм и возобновляемая энергетика. Сейчас руковожу e-commerce и маркетингом в Fine Spirits: команда, бюджеты, стратегия и KPI.", "Ponad 8 lat w performance marketingu, SEO, PPC i automatyzacji CRM dla B2C i B2B: e-commerce, beauty, dostawa jedzenia, edukacja, usługi motoryzacyjne, turystyka i odnawialne źródła energii. Obecnie kieruję e-commerce i marketingiem w Fine Spirits: zespół, budżety, strategia i KPI."], "50": ["Сначала данные: чистый трекинг, понятная воронка и креативы вокруг того, что клиент действительно покупает. Потом бюджет идёт только туда, где продаёт.", "Najpierw dane: czyste śledzenie, przejrzysty lejek i kreacje zbudowane wokół tego, co klient naprawdę kupuje. Potem budżet trafia tylko tam, gdzie jest sprzedaż."], "51": ["Моя цель — проекты, где реклама, аналитика и продукт работают как одна система, и команда, которая растит её вместе со мной.", "Mój cel: projekty, w których reklama, analityka i produkt działają jak jeden system, oraz zespół, który rozwija go razem ze mną."], "53": ["Lead Ads и Direct", "Lead Ads i Direct"], "54": ["Ретаргетинг", "Retargeting"], "55": ["ТЗ на креативы", "Briefy kreacji"], "58": ["E-commerce и SEO", "E-commerce i SEO"], "60": ["Управление командой", "Zarządzanie zespołem"], "61": ["E-commerce, еда и услуги", "E-commerce, gastronomia i usługi"], "63": ["алкогольный e-commerce, вся Польша", "e-commerce alkoholowy, cała Polska"], "64": ["Сеть суши · Japoński Sąsiad · Ento Sushi", "Sieć sushi · Japoński Sąsiad · Ento Sushi"], "65": ["доставка еды, PL и DE", "dostawa jedzenia, PL i DE"], "66": ["Школы и локальный бизнес", "Szkoły i usługi lokalne"], "67": ["образование, детейлинг", "edukacja, detailing"], "68": ["Клиенты beauty и wellness", "Klienci beauty i wellness"], "70": ["перманентный макияж, Италия", "makijaż permanentny, Włochy"], "72": ["салон красоты, Варшава", "salon beauty, Warszawa"], "73": ["Сеть салонов красоты", "Sieć salonów fryzjerskich i beauty"], "74": ["сеть салонов, Варшава", "fryzjerstwo i beauty, Warszawa"], "76": ["студия стретчинга, Варшава", "studio stretchingu, Warszawa"], "77": ["Кейс 01 · Перманентный макияж · Милан, Италия", "Case 01 · Makijaż permanentny · Mediolan, Włochy"], "80": ["6 месяцев", "6 miesięcy"], "81": ["Местная итальянская аудитория", "Lokalna włoska publiczność"], "82": ["выручки при €3 636 на рекламу", "przychodu z 3 636 € na reklamę"], "84": ["(выручка − реклама) ÷ реклама", "(przychód − reklama) ÷ reklama"], "86": ["€7,1 выручки на каждый €1", "7,1 € przychodu z każdego 1 €"], "87": ["Диалогов в Direct", "Rozmów w Direct"], "88": ["≈ €10,7 за диалог", "≈ 10,7 € za rozmowę"], "89": ["Подробнее", "Szczegóły"], "90": ["Свернуть", "Zwiń"], "91": ["↑ Все кейсы", "↑ Wszystkie case studies"], "92": ["<i>1</i>Задача", "<i>1</i>Zadanie"], "93": ["Привести местных клиентов в студию перманентного макияжа и продать обучающие курсы без навязчивых продаж.", "Przyciągnąć lokalnych klientów do studia makijażu permanentnego i sprzedać szkolenia bez nachalnej sprzedaży."], "94": ["<i>2</i>Что сделала", "<i>2</i>Co zrobiłam"], "95": ["Реклама, которая вызывает доверие: процесс работы, макро, до/после", "Reklamy budujące zaufanie: proces pracy, makro, przed/po"], "96": ["Трафик в Instagram, где люди «прогревались» и писали в Direct", "Ruch na Instagram, który rozgrzewał odbiorców, aż pisali w Direct"], "97": ["Деликатный ретаргетинг на посетителей профиля и зрителей видео", "Delikatny retargeting osób odwiedzających profil i oglądających wideo"], "98": ["<i>3</i>Результат", "<i>3</i>Wynik"], "99": ["<b>€22 354</b> выручки за вычетом рекламы", "<b>22 354 €</b> przychodu po odjęciu reklamy"], "100": ["<b>€20 990</b> с процедур", "<b>20 990 €</b> z zabiegów"], "101": ["<b>€5 000</b> с курсов: губы + 3 обучения по бровям", "<b>5 000 €</b> ze szkoleń: usta + 3 szkolenia z brwi"], "102": ["Лучшие недели по выручке", "Najlepsze tygodnie wg przychodu"], "103": ["28 апр – 9 мая", "28 kwi – 9 maja"], "104": ["29 мар – 4 апр", "29 mar – 4 kwi"], "105": ["27 дек – 10 янв", "27 gru – 10 sty"], "106": ["16 – 21 мар", "16 – 21 mar"], "107": ["Структура выручки", "Podział przychodu"], "108": ["Кейс 02 · Салон красоты · Варшава", "Case 02 · Salon beauty · Warszawa"], "111": ["6 месяцев", "6 miesięcy"], "112": ["Lead Ads + ремаркетинг", "Lead Ads + remarketing"], "113": ["записей за 6 месяцев", "rezerwacji w 6 miesięcy"], "115": ["каждый злотый в рекламе вернул 3,5–4 zł", "każda złotówka w reklamie przyniosła 3,5–4 zł"], "116": ["Цена записи", "Koszt rezerwacji"], "117": ["20–40 zł за лид", "20–40 zł za leada"], "118": ["Конверсия по услугам", "Konwersja na usługi"], "119": ["200–300 лидов в месяц", "200–300 leadów miesięcznie"], "120": ["Подробнее", "Szczegóły"], "121": ["Свернуть", "Zwiń"], "122": ["↑ Все кейсы", "↑ Wszystkie case studies"], "123": ["<i>1</i>Задача", "<i>1</i>Zadanie"], "124": ["Заполнить расписание салона новыми клиентами на массаж, уход за лицом и лазер по приемлемой для салона цене записи.", "Zapełnić grafik salonu nowymi klientami na masaże, zabiegi na twarz i laser przy koszcie rezerwacji, na który salon może sobie pozwolić."], "125": ["<i>2</i>Что сделала", "<i>2</i>Co zrobiłam"], "126": ["Воронка TOFU → MOFU → BOFU, Lead Ads и динамический ремаркетинг", "Lejek TOFU → MOFU → BOFU, Lead Ads i dynamiczny remarketing"], "127": ["Офферы с якорной ценой и ограниченным числом мест", "Oferty z ceną referencyjną i ograniczoną liczbą miejsc"], "128": ["Квиз и коллаборации с блогерами", "Quiz i współpraca z blogerami"], "129": ["<i>3</i>Результат", "<i>3</i>Wynik"], "130": ["<b>1 100+</b> записей", "<b>1 100+</b> rezerwacji"], "132": ["CTR <b>1,5–2,5%</b>, <b>1,5 млн+</b> показов", "CTR <b>1,5–2,5%</b>, <b>1,5 mln+</b> wyświetleń"], "133": ["Примеры рекламы", "Przykłady reklam"], "134": ["Кейс 03 · Сеть салонов красоты · Варшава", "Case 03 · Sieć salonów fryzjerskich i beauty · Warszawa"], "135": ["Сеть премиальных салонов", "Sieć salonów fryzjerskich premium"], "137": ["Лидогенерация", "Generowanie leadów"], "139": ["✓ KPI выполнен", "✓ KPI osiągnięte"], "140": ["клиентов пришли на услугу", "klientów przyszło na usługę"], "141": ["KPI окупаемости", "KPI progu rentowności"], "142": ["клиентов нужно для окупаемости рекламы", "klientów potrzeba, by reklama się zwróciła"], "143": ["Макс. цена лида", "Maks. koszt leada"], "144": ["при стартовой воронке", "przy wyjściowym lejku"], "145": ["Больше запаса по цене лида", "Wyższy dopuszczalny koszt leada"], "146": ["после улучшения записи и доходимости", "po poprawie zapisów i frekwencji"], "147": ["Подробнее", "Szczegóły"], "148": ["Свернуть", "Zwiń"], "149": ["↑ Все кейсы", "↑ Wszystkie case studies"], "150": ["<i>1</i>Задача", "<i>1</i>Zadanie"], "151": ["Сделать так, чтобы реклама окупалась для сети салонов красоты.", "Sprawić, by reklama się zwracała dla sieci salonów fryzjerskich i beauty."], "152": ["<i>2</i>Что сделала", "<i>2</i>Co zrobiłam"], "153": ["Рассчитала точку безубыточности: <b>115 клиентов</b>, которые реально придут. Затем определила максимальную цену лида и записи.", "Policzyłam próg rentowności: <b>115 klientów</b>, którzy faktycznie przyjdą. Potem ustaliłam maksymalny koszt leada i rezerwacji."], "154": ["<i>3</i>Результат", "<i>3</i>Wynik"], "155": ["<b>KPI выполнен</b>. При более высокой записи и доходимости можно платить до <b>$3,28 за лид</b> и оставаться в плюсе.", "<b>KPI osiągnięte</b>. Lepsze zapisy i frekwencja pozwalają płacić do <b>3,28 $ za leada</b> bez straty."], "156": ["Сценарий воронки", "Scenariusz lejka"], "157": ["Лид → запись", "Lead → zapis"], "158": ["Доходимость", "Frekwencja"], "159": ["Нужно лидов", "Potrzeba leadów"], "160": ["Макс. цена / лид", "Maks. koszt / lead"], "161": ["Старт", "Punkt wyjścia"], "162": ["Выше запись", "Lepsze zapisy"], "163": ["Выше запись и доходимость", "Lepsze zapisy i frekwencja"], "164": ["Примеры рекламы", "Przykłady reklam"], "165": ["Кейс 04 · Алкогольный e-commerce · Доставка по всей Польше", "Case 04 · E-commerce alkoholowy · Dostawa w całej Polsce"], "167": ["Head of E-commerce &amp; Marketing · с июля 2025", "Head of E-commerce &amp; Marketing · od lipca 2025"], "168": ["WooCommerce · 2 700+ товаров", "WooCommerce · 2 700+ produktów"], "170": ["онлайн-выручка, июнь–авг 2026 к 2025", "przychód online, cze–sie 2026 vs 2025"], "171": ["Онлайн-заказы", "Zamówienia online"], "172": ["год к году, июнь–авг", "rok do roku, cze–sie"], "173": ["Средний чек", "Średnia wartość zamówienia"], "174": ["премиальные вина и крепкий алкоголь", "wina i alkohole premium"], "175": ["Выручка всей компании", "Przychód całej firmy"], "176": ["241K → 688K zł брутто, средний чек +75%, заказы +63%", "241K → 688K zł brutto, AOV +75%, zamówienia +63%"], "177": ["Подробнее", "Szczegóły"], "178": ["Свернуть", "Zwiń"], "179": ["↑ Все кейсы", "↑ Wszystkie case studies"], "180": ["<i>1</i>Задача", "<i>1</i>Zadanie"], "181": ["Увеличить продажи алкогольного интернет-магазина с доставкой по всей Польше, а также магазина, B2B и HoReCa, в рамках строгих правил рекламы алкоголя. Руководить командой маркетинга и подрядчиками.", "Zwiększyć sprzedaż sklepu internetowego z alkoholem z dostawą w całej Polsce, a także sklepu stacjonarnego, B2B i HoReCa, zgodnie z rygorystycznymi zasadami reklamy alkoholu. Kierować zespołem marketingu i podwykonawcami."], "182": ["<i>2</i>Что сделала", "<i>2</i>Co zrobiłam"], "183": ["Полная воронка Meta Ads: каталог 2 700+ товаров, наборы товаров, DPA, ретаргетинг, CAPI", "Pełny lejek Meta Ads: katalog 2 700+ produktów, zestawy produktów, DPA, retargeting, CAPI"], "184": ["Google Ads: поиск, защита бренда, запросы с доставкой", "Google Ads: wyszukiwarka, ochrona marki, zapytania o dostawę"], "185": ["Новая навигация сайта: 88 скрытых подарочных наборов снова на виду", "Nowa nawigacja sklepu: 88 ukrytych zestawów prezentowych znów widocznych"], "186": ["<i>3</i>Рост и удержание", "<i>3</i>Wzrost i retencja"], "187": ["Мобильное приложение со стороны бизнеса: лояльность, офферы только в приложении, проверка 66 экранов, ASO", "Aplikacja mobilna po stronie biznesu: lojalność, oferty tylko w aplikacji, przegląd 66 ekranów, ASO"], "188": ["Сезонный календарь: Black Friday, Рождество, корпоративные подарки", "Kalendarz sezonowy: Black Friday, Święta, prezenty firmowe"], "189": ["Ежемесячные KPI-дашборды для руководства", "Miesięczne dashboardy KPI dla zarządu"], "190": ["Новые каналы", "Nowe kanały"], "192": ["~10K zł/мес", "~10K zł/mies."], "193": ["Доля всех заказов", "Udział we wszystkich zamówieniach"], "194": ["14% за 3 мес", "14% w 3 mies."], "195": ["SEO, первые 6 недель", "SEO, pierwsze 6 tygodni"], "196": ["Органические клики", "Kliknięcia organiczne"], "197": ["Органический трафик", "Ruch organiczny"], "198": ["Ключевые слова в выдаче", "Słowa kluczowe w rankingu"], "199": ["Кейс 05 · Доставка еды · 15+ городов Польши", "Case 05 · Dostawa jedzenia · 15+ miast w Polsce"], "200": ["Сеть доставки суши · 15+ городов", "Sieć dostawy sushi · 15+ miast"], "201": ["Таргет Meta Ads", "Targetowanie Meta Ads"], "202": ["~1 год", "~1 rok"], "203": ["E-commerce · ROAS как главный KPI", "E-commerce · ROAS jako główny KPI"], "204": ["выручки в 15+ городах · 5 411 766 zł", "przychodu w 15+ miastach · 5 411 766 zł"], "205": ["Средний ROAS", "Średni ROAS"], "206": ["до 15,45× в лучших кампаниях", "do 15,45× w najlepszych kampaniach"], "207": ["Покупок на сайте", "Zakupów na stronie"], "208": ["охват 8,2 млн человек", "zasięg 8,2 mln osób"], "209": ["Рекламный бюджет", "Budżet reklamowy"], "210": ["Подробнее", "Szczegóły"], "211": ["Свернуть", "Zwiń"], "212": ["↑ Все кейсы", "↑ Wszystkie case studies"], "213": ["<i>1</i>Задача", "<i>1</i>Zadanie"], "214": ["Увеличить онлайн-заказы премиального суши-бренда в 15+ городах Польши и держать высокий ROAS каждый день, а не только в выходные.", "Zwiększyć liczbę zamówień online marki sushi premium w 15+ miastach Polski i utrzymać wysoki ROAS codziennie, nie tylko w weekendy."], "215": ["<i>2</i>Что сделала", "<i>2</i>Co zrobiłam"], "216": ["Полная воронка TOFU → MOFU → BOFU: реклама → сайт → онлайн-заказ", "Pełny lejek TOFU → MOFU → BOFU: reklama → strona → zamówienie online"], "217": ["Каталожные кампании по городам, реклама на польском", "Kampanie katalogowe w podziale na miasta, reklamy po polsku"], "218": ["Перестроила ремаркетинг на аудиториях GA4 + CRM", "Przebudowałam remarketing na grupach z GA4 + CRM"], "219": ["<i>3</i>Результат", "<i>3</i>Wynik"], "220": ["ROAS в будни вырос с <b>2–3×</b> до стабильных <b>4–6×</b>", "ROAS w dni robocze wzrósł z <b>2–3×</b> do stabilnych <b>4–6×</b>"], "221": ["Цена покупки снизилась с <b>45 zł</b> до <b>21–29 zł</b>", "Koszt zakupu spadł z <b>45 zł</b> do <b>21–29 zł</b>"], "222": ["Данные по городам помогли открыть <b>3 новые точки</b>: Щецин, Белосток, Люблин", "Dane z miast pomogły otworzyć <b>3 nowe lokale</b>: Szczecin, Białystok, Lublin"], "223": ["ROAS по городам, каталожные кампании", "ROAS wg miast, kampanie katalogowe"], "224": ["Познань", "Poznań"], "225": ["Люблин", "Lublin"], "226": ["Белосток", "Białystok"], "227": ["Катовице", "Katowice"], "228": ["Гдыня", "Gdynia"], "229": ["Щецин", "Szczecin"], "230": ["Гданьск", "Gdańsk"], "231": ["Варшава", "Warszawa"], "232": ["Кейс 05 · Сеть доставки суши · из рекламного кабинета", "Case 05 · Sieć dostawy sushi · z konta reklamowego"], "233": ["Что дало результат", "Co dało wyniki"], "234": ["Meta Ads Manager, срез за 6 месяцев: кампании по городам, средний ROAS 5,26", "Meta Ads Manager, wycinek z 6 miesięcy: kampanie wg miast, średni ROAS 5,26"], "235": ["Ремаркетинг", "Remarketing"], "236": ["Ключевое решение. До перестройки ROAS в будни скакал около 2–3×. После — 4–6× в будни и ровный результат весь месяц.", "Kluczowa decyzja. Przed przebudową ROAS w dni robocze skakał w okolicach 2–3×. Po niej 4–6× w tygodniu i stabilny wynik przez cały miesiąc."], "237": ["Форматы", "Formaty"], "238": ["Лучше всего сработали UGC и моушн-видео. Параллельно шёл трафик в Instagram как дополнительный канал продаж.", "Najlepiej działały UGC i motion video. Równolegle prowadziliśmy ruch na Instagram jako dodatkowy kanał sprzedaży."], "239": ["Сезонность", "Sezonowość"], "240": ["Пики заказов — с пятницы по воскресенье. Увеличение бюджета на Black Friday и Новый год. У суши нет мёртвого сезона.", "Szczyty zamówień przypadają od piątku do niedzieli. Większy budżet na Black Friday i Nowy Rok. Sushi nie ma martwego sezonu."], "241": ["Подход", "Podejście"], "242": ["Без волшебных фишек: постоянные тесты аудиторий, визуалов и текстов в поиске лучших связок, ROAS как главный KPI.", "Bez magicznych trików: ciągłe testy grup, kreacji i tekstów w poszukiwaniu najlepszych połączeń, z ROAS jako głównym KPI."], "243": ["Кейс 06 · Новый суши-бренд с нуля · Варшава", "Case 06 · Nowa marka sushi od zera · Warszawa"], "246": ["Запуск бренда", "Start marki"], "247": ["Блогеры · лояльность · сайт", "Blogerzy · lojalność · strona"], "248": ["цена заказа по рекламному кабинету", "koszt zamówienia w Ads Managerze"], "249": ["Средний чек", "Średni rachunek"], "250": ["каждый заказ окупает рекламу многократно", "każde zamówienie wielokrotnie zwraca koszt reklamy"], "251": ["Новые рестораны", "Nowe restauracje"], "252": ["вторая точка в Варшаве, открывается Вроцлав", "drugi lokal w Warszawie, otwarcie we Wrocławiu"], "253": ["Выручка первого ресторана", "Przychód pierwszej restauracji"], "254": ["за пилотный период", "w okresie pilotażu"], "255": ["Подробнее", "Szczegóły"], "256": ["Свернуть", "Zwiń"], "257": ["↑ Все кейсы", "↑ Wszystkie case studies"], "258": ["<i>1</i>Задача", "<i>1</i>Zadanie"], "259": ["Запустить новый суши-бренд в Варшаве с нуля и сделать заказы на доставку прибыльными.", "Uruchomić od zera nową markę sushi w Warszawie i sprawić, by zamówienia z dostawą były rentowne."], "260": ["<i>2</i>Что сделала", "<i>2</i>Co zrobiłam"], "261": ["Бренд с нуля: участвовала в запуске сайта и системы лояльности", "Marka od zera: udział w uruchomieniu strony i programu lojalnościowego"], "262": ["Профиль Instagram и реклама с крупными планами еды, сеты с ценой и кнопкой заказа", "Profil na Instagramie i reklamy ze zbliżeniami jedzenia, zestawy z ceną i przyciskiem zamówienia"], "263": ["Коммуникация и коллаборации с блогерами", "Współpraca z blogerami"], "264": ["<i>3</i>Результат", "<i>3</i>Wynik"], "265": ["Заказ обходится в <b>~23 zł</b> при среднем чеке <b>~200 zł</b>: реклама работает в плюс", "Zamówienie kosztuje <b>~23 zł</b> przy średnim rachunku <b>~200 zł</b>: reklama jest rentowna"], "266": ["<b>Ещё 2 ресторана</b>: вторая точка в Варшаве и открытие во Вроцлаве", "<b>2 kolejne restauracje</b>: drugi lokal w Warszawie i otwarcie we Wrocławiu"], "267": ["Примеры рекламы", "Przykłady reklam"], "268": ["Кейс 07 · Премиальная доставка суши · Франкфурт, Германия", "Case 07 · Dostawa sushi premium · Frankfurt, Niemcy"], "272": ["ИИ-бот в Instagram Direct", "Bot AI w Instagram Direct"], "273": ["ROAS в первый месяц после исправлений", "ROAS w pierwszym miesiącu po poprawkach"], "274": ["Выручка с рекламы", "Przychód z reklam"], "275": ["при €825 на рекламу за месяц", "przy budżecie 825 € w miesiąc"], "276": ["Покупок с рекламы", "Zakupów z reklam"], "277": ["574 добавления в корзину, охват 28 468", "574 dodania do koszyka, zasięg 28 468"], "279": ["ниже среднего по еде в Германии ($8–15)", "poniżej średniej dla jedzenia w Niemczech (8–15 $)"], "280": ["Подробнее", "Szczegóły"], "281": ["Свернуть", "Zwiń"], "282": ["↑ Все кейсы", "↑ Wszystkie case studies"], "283": ["<i>1</i>Задача", "<i>1</i>Zadanie"], "284": ["Принять в работу рекламный кабинет премиальной доставки суши во Франкфурте, исправить аналитику и увеличить заказы на небольшом бюджете.", "Przejąć konto reklamowe dostawy sushi premium we Frankfurcie, naprawić analitykę i zwiększyć liczbę zamówień przy małym budżecie."], "285": ["<i>2</i>Что сделала", "<i>2</i>Co zrobiłam"], "286": ["Полный аудит, затем все данные в одной таблице Looker Studio, чтобы клиенту было удобно всё видеть", "Pełny audyt, potem wszystkie dane w jednym dashboardzie Looker Studio, czytelnym dla klienta"], "287": ["Перенастроила GA4 и трекинг, чтобы каждый заказ считался правильно", "Przebudowałam GA4 i śledzenie, by każde zamówienie liczyło się poprawnie"], "288": ["ИИ-бот для приёма заказов в Instagram Direct: создали и протестировали вместе с разработчиками", "Bot AI przyjmujący zamówienia w Instagram Direct, zbudowany i przetestowany razem z programistami"], "289": ["<i>3</i>Стратегия", "<i>3</i>Strategia"], "290": ["Продвижение сразу по нескольким направлениям, а не только на холодную и тёплую аудиторию", "Kilka kierunków naraz, nie tylko ruch zimny i ciepły"], "291": ["Отдельный ретаргетинг на тех, кто добавил товар в корзину, но не купил", "Osobny retargeting na osoby, które dodały produkt do koszyka, ale nie kupiły"], "292": ["Реклама ведёт прямо в Direct, где бот принимает заказ", "Reklamy prowadzą prosto do Direct, gdzie bot przyjmuje zamówienie"], "293": ["Примеры рекламы", "Przykłady reklam"], "294": ["Кейс 07 · Ento Sushi · первый месяц после исправлений", "Case 07 · Ento Sushi · miesiąc po poprawkach"], "295": ["Что клиент видит каждый день", "Co klient widzi każdego dnia"], "296": ["Дашборд Looker Studio: сайт (GA4) и реклама Meta в одном окне", "Dashboard Looker Studio: strona (GA4) i reklamy Meta w jednym widoku"], "297": ["Ento против рынка", "Ento a rynek"], "298": ["Метрика", "Metryka"], "300": ["Рынок", "Rynek"], "301": ["Цена заявки", "Koszt zapytania"], "304": ["Meta Ads Manager: отдельные кампании под каждое направление", "Meta Ads Manager: osobne kampanie dla każdego kierunku"], "305": ["Что сработало", "Co zadziałało"], "306": ["Ретаргетинг на брошенные корзины: <b>ROAS 12,79</b>, 41 покупка", "Retargeting porzuconych koszyków: <b>ROAS 12,79</b>, 41 zakupów"], "307": ["Кампания на покупки: <b>ROAS 4,91</b>, 39 покупок", "Kampania na zakupy: <b>ROAS 4,91</b>, 39 zakupów"], "308": ["Сайт: <b>297 заказов</b> и <b>€17 635</b> выручки за месяц", "Strona: <b>297 zamówień</b> i <b>17 635 €</b> przychodu w miesiąc"], "309": ["Кейс 08 · Образование · дети 6–14", "Case 08 · Edukacja · dzieci 6–14"], "310": ["Школа программирования Kiber One", "Szkoła programowania Kiber One"], "312": ["Лидогенерация", "Generowanie leadów"], "313": ["Бесплатный пробный урок", "Darmowa lekcja próbna"], "314": ["детей записались на занятия", "dzieci zapisanych na zajęcia"], "315": ["Лидов из Facebook", "Leadów z Facebooka"], "316": ["охват 993 548 человек", "zasięg 993 548 osób"], "317": ["Цена лида", "Koszt leada"], "319": ["Лиды → запись", "Leady → zapis"], "320": ["больше трети лидов записались", "ponad co trzeci lead się zapisał"], "321": ["Подробнее", "Szczegóły"], "322": ["Свернуть", "Zwiń"], "323": ["↑ Все кейсы", "↑ Wszystkie case studies"], "324": ["<i>1</i>Задача", "<i>1</i>Zadanie"], "325": ["Заполнить группы детской школы программирования стабильным потоком родителей, готовых записаться.", "Zapełnić grupy szkoły programowania dla dzieci stałym napływem rodziców gotowych do zapisu."], "326": ["<i>2</i>Что сделала", "<i>2</i>Co zrobiłam"], "327": ["Бесплатный пробный урок как лид-магнит", "Darmowa lekcja próbna jako lead magnet"], "328": ["Реклама для родителей: «ребёнок целый день играет — пусть сам создаёт игры»", "Reklamy skierowane do rodziców: „dziecko cały dzień gra? Niech samo tworzy gry”"], "329": ["Facebook Lead Ads плюс Google Ads", "Facebook Lead Ads plus Google Ads"], "330": ["<i>3</i>Результат", "<i>3</i>Wynik"], "331": ["<b>838</b> лидов по <b>$3,29</b>", "<b>838</b> leadów po <b>3,29 $</b>"], "332": ["<b>317</b> детей записались", "<b>317</b> dzieci zapisanych"], "333": ["<b>3,1 млн</b> показов, <b>10 740</b> уникальных кликов", "<b>3,1 mln</b> wyświetleń, <b>10 740</b> unikalnych kliknięć"], "334": ["Примеры рекламы", "Przykłady reklam"], "335": ["Кейс 09 · Языковая школа · Киев, Варшава, Вроцлав", "Case 09 · Szkoła językowa · Kijów, Warszawa, Wrocław"], "338": ["3 месяца", "3 miesiące"], "339": ["Дети и взрослые · 6 офферов", "Dzieci i dorośli · 6 ofert"], "340": ["лидов за 3 месяца", "leadów w 3 miesiące"], "341": ["Цена лида", "Koszt leada"], "342": ["−14% с 1-го по 3-й месяц", "−14% od 1. do 3. miesiąca"], "343": ["Охват", "Zasięg"], "344": ["за первый месяц", "w pierwszym miesiącu"], "345": ["Новых подписчиков", "Nowych obserwujących"], "346": ["по $0,39, подписались 40% посетителей", "po 0,39 $, 40% odwiedzających zaobserwowało"], "347": ["Подробнее", "Szczegóły"], "348": ["Свернуть", "Zwiń"], "349": ["↑ Все кейсы", "↑ Wszystkie case studies"], "350": ["<i>1</i>Задача", "<i>1</i>Zadanie"], "351": ["Получить записи на бесплатные пробные уроки в трёх городах: английский для детей и взрослых, польский для взрослых, книжный клуб.", "Pozyskać zapisy na darmowe lekcje próbne w trzech miastach: angielski dla dzieci i dorosłych, polski dla dorosłych, klub książki."], "352": ["<i>2</i>Что сделала", "<i>2</i>Co zrobiłam"], "353": ["Протестировала 7 аудиторий: от интересов родителей до Meta Advantage+", "Przetestowałam 7 grup odbiorców: od zainteresowań rodziców po Meta Advantage+"], "354": ["62 объявления: выиграли статика и анимированная статика", "62 reklamy: wygrały statyczne i animowane grafiki"], "355": ["Расширенная лид-форма для повышения качества лидов", "Dłuższy formularz dla lepszej jakości leadów"], "356": ["Ежедневная таблица отчётности по всей воронке", "Codzienny arkusz raportowy z całym lejkiem"], "357": ["<i>3</i>Результат", "<i>3</i>Wynik"], "358": ["Лидов в месяц: <b>75 → 97 → 93</b>", "Leady miesięcznie: <b>75 → 97 → 93</b>"], "359": ["Бюджет сосредоточен на городе с лучшими результатами", "Budżet skupiony na mieście z najlepszymi wynikami"], "360": ["Примеры рекламы", "Przykłady reklam"], "361": ["Кейс 10 · Детейлинг · Варшава", "Case 10 · Detailing samochodowy · Warszawa"], "362": ["Две детейлинг-студии", "Dwa studia detailingu"], "364": ["Новые рекламные кабинеты", "Nowe konta reklamowe"], "365": ["Лид-формы + рост Instagram", "Formularze + rozwój Instagrama"], "366": ["лидов за первый месяц", "leadów w pierwszym miesiącu"], "367": ["Объявлений протестировано", "Przetestowanych reklam"], "368": ["видео и статика, с ценой и без", "wideo i grafiki, z ceną i bez"], "369": ["Переходов в профиль Instagram", "Wizyt na profilu Instagram"], "370": ["от 0,31 zł / $0,16 за переход", "od 0,31 zł / 0,16 $ za wizytę"], "371": ["Охват", "Zasięg"], "372": ["одна студия, первый месяц", "jedno studio, pierwszy miesiąc"], "373": ["Подробнее", "Szczegóły"], "374": ["Свернуть", "Zwiń"], "375": ["↑ Все кейсы", "↑ Wszystkie case studies"], "376": ["<i>1</i>Задача", "<i>1</i>Zadanie"], "377": ["Запустить Meta Ads с нуля для двух детейлинг-студий: плёнка PPF, полировка, керамика, мойка.", "Uruchomić Meta Ads od zera dla dwóch studiów detailingu: folia PPF, polerowanie, ceramika, myjnia."], "378": ["<i>2</i>Что сделала", "<i>2</i>Co zrobiłam"], "379": ["Прогрела новые кабинеты, чтобы избежать блокировок", "Rozgrzałam nowe konta, by uniknąć blokad"], "380": ["Протестировала 3 типа аудиторий: Advantage+, широкую и по интересам к премиум-авто", "Przetestowałam 3 typy grup: Advantage+, szeroką i z zainteresowaniem autami premium"], "381": ["Перешла с дорогой плёнки PPF на входные офферы для первого визита", "Przeszłam z drogiej folii PPF na oferty wejściowe na pierwszą wizytę"], "382": ["<i>3</i>Результат", "<i>3</i>Wynik"], "383": ["Рабочий оффер найден в первый месяц: <b>полировка за 999 zł</b> с ограничением мест и дедлайном", "Zwycięska oferta w pierwszym miesiącu: <b>polerowanie za 999 zł</b> z limitem miejsc i terminem"], "384": ["Лучшая аудитория: интересы к маркам авто", "Najlepsza grupa: zainteresowania markami aut"], "385": ["Полировка + керамика: <b>27 лидов</b> по $13,80 за месяц", "Polerowanie + ceramika: <b>27 leadów</b> po 13,80 $ w miesiąc"], "386": ["Примеры рекламы", "Przykłady reklam"], "387": ["Ещё результаты", "Więcej wyników"], "388": ["Другие проекты коротко", "Inne projekty w skrócie"], "389": ["И ещё много кейсов помимо этих.", "I wiele innych case studies poza tymi."], "390": ["Образование · дети 5–14", "Edukacja · dzieci 5–14"], "391": ["Школа английского языка", "Szkoła języka angielskiego"], "392": ["заявок, в среднем $9,30", "zapytań, średnio 9,30 $"], "393": ["качественных лидов", "wartościowych leadów"], "394": ["Соцсети с нуля: стратегия, анализ конкурентов и креативы. На второй месяц перешла с конверсий на Lead Ads и получила ещё 15 заявок по $7,78.", "Social media od zera: strategia, analiza konkurencji i kreacje. W drugim miesiącu przejście z konwersji na Lead Ads i 15 kolejnych zapytań po 7,78 $."], "395": ["Личный бренд · Instagram", "Marka osobista · Instagram"], "396": ["Блогер-фрилансер", "Blogerka-freelancerka"], "397": ["новых подписчиков", "nowych obserwujących"], "398": ["за подписчика", "za obserwującego"], "399": ["Бриф личности и анализ ниши, перестройка профиля, чистка ботов, чек-лист «Фриланс с нуля» и страница с ценами на консультации.", "Brief osobowości i analiza niszy, przebudowa profilu, usunięcie botów, checklista „Freelance od zera” i strona z cenami konsultacji."], "400": ["Оформление Instagram", "Oprawa Instagrama"], "401": ["Оформление профилей в Instagram", "Projekt profili na Instagramie"], "402": ["оформленных профиля", "zaprojektowane profile"], "403": ["Единый визуальный стиль для каждого профиля: мастер по ресницам и бровям, бренд посуды и ресторан.", "Spójny styl wizualny każdego profilu: stylistka rzęs i brwi, marka naczyń i restauracja."], "404": ["Стратегия", "Strategia"], "405": ["Каждый проект начинается с плана, но им не ограничивается", "Każdy projekt zaczyna się od planu, ale na nim się nie kończy"], "406": ["Каждый клиент получает план продвижения, анализ конкурентов и аудит рекламного кабинета ещё до запуска первой рекламы. Прорабатываю аудиторию и офферы и согласую KPI. Несколько примеров:", "Każdy klient dostaje plan promocji, analizę konkurencji i audyt konta reklamowego, zanim ruszy pierwsza reklama. Określam grupy docelowe i oferty oraz uzgadniam KPI. Kilka przykładów:"], "407": ["Студия аэростретчинга · Варшава", "Studio aerostretchingu · Warszawa"], "409": ["2 сегмента аудитории, новички и опытные, с их болями и целями", "2 segmenty: początkujący i zaawansowani, z ich problemami i celami"], "410": ["Проанализирована реклама 3 студий-конкурентов", "Przeanalizowane reklamy 3 konkurencyjnych studiów"], "411": ["Офферы на пробное занятие: 59 zł и 39 zł", "Oferty zajęć próbnych: 59 zł i 39 zł"], "412": ["Бюджет 3 000 zł с прогнозом 90–150 лидов", "Budżet 3 000 zł z prognozą 90–150 leadów"], "413": ["Турагентство · Польша", "Biuro podróży · Polska"], "415": ["Запуск с нового кабинета без истории", "Start z nowego konta bez historii"], "416": ["Аудитория: студенты 18–26, ищущие бюджетные туры", "Grupa: studenci 18–26 szukający tanich wyjazdów"], "417": ["Цели: узнаваемость, подписчики, первые клиенты", "Cele: rozpoznawalność, nowi obserwujący, pierwsi klienci"], "418": ["Языковая школа · 3 города", "Szkoła językowa · 3 miasta"], "420": ["Отдельные офферы для детей и взрослых в каждом городе", "Osobne oferty dla dzieci i dorosłych w każdym mieście"], "421": ["KPI воронки: сколько нужно лидов, записей и визитов для 30 продаж", "KPI lejka: ile leadów, zapisów i wizyt potrzeba do 30 sprzedaży"], "422": ["Ежедневная таблица с ценой лида и записи", "Codzienny arkusz z kosztem leada i zapisu"], "423": ["Как мы работаем", "Jak pracujemy"], "424": ["От аудита до стабильного и предсказуемого роста", "Od audytu do stabilnego, przewidywalnego wzrostu"], "425": ["<i>1</i>Аудит", "<i>1</i>Audyt"], "426": ["Рекламный кабинет, профиль Instagram, офферы, цены и трекинг. Что уже работает и где утекают деньги.", "Konto reklamowe, profil Instagram, oferty, ceny i śledzenie. Co już działa i gdzie uciekają pieniądze."], "427": ["<i>2</i>План и KPI", "<i>2</i>Plan i KPI"], "428": ["Точка безубыточности, KPI воронки, аудитории, распределение бюджета и оффер для каждого продукта или услуги.", "Próg rentowności, KPI lejka, grupy docelowe, podział budżetu i oferta dla każdego produktu lub usługi."], "429": ["<i>3</i>Креативы", "<i>3</i>Kreacje"], "430": ["Концепции и ТЗ вокруг того, что покупает клиент: понятный оффер, цена и одно действие.", "Koncepcje i briefy zbudowane wokół tego, co kupuje klient: jasna oferta, cena i jedno wezwanie do działania."], "431": ["<i>4</i>Запуск и тесты", "<i>4</i>Start i testy"], "432": ["Настройка пикселя и событий. A/B-тесты креативов, текстов и аудиторий.", "Konfiguracja piksela i zdarzeń. Testy A/B kreacji, tekstów i grup."], "433": ["<i>5</i>Масштаб и отчёты", "<i>5</i>Skalowanie i raporty"], "434": ["Бюджет уходит туда, где продажи. Регулярные отчёты по лидам, продажам, цене результата, ROAS и ROMI.", "Budżet trafia tam, gdzie jest sprzedaż. Regularne raporty: leady, sprzedaż, koszt wyniku, ROAS i ROMI."], "435": ["Контакты", "Kontakt"], "436": ["Давайте растить вашу <em>выручку.</em>", "Zwiększmy Twój <em>przychód.</em>"], "437": ["Расскажите о вашем бизнесе и целях. Отвечу коротким аудитом и первыми идеями для роста.", "Opowiedz mi o swojej firmie i celach. Odpowiem krótkim audytem i pierwszymi pomysłami na wzrost."], "438": ["Почта", "E-mail"], "439": ["Телефон", "Telefon"], "L1": ["<b>81%</b> процедуры · <b>19%</b> курсы", "<b>81%</b> zabiegi · <b>19%</b> szkolenia"], "title": ["Валерия Гончарук · Портфолио", "Valeriia Honcharuk · Portfolio"]};
+(() => {
+  const els = [...document.querySelectorAll("[data-t]")];
+  els.forEach(e => { e._en = e.innerHTML; });
+  // figures that are not translated get local number format in RU / PL: 1,100 -> 1 100, 5.27 -> 5,27
+  const nums = [...document.querySelectorAll(".num, .tbl td, .card .s, .hero span, .bar .d")].filter(e => !e.dataset.t && !e.closest("[data-t]"));
+  nums.forEach(e => { e._en = e.innerHTML; });
+  const enTitle = document.title, idx = { ru: 0, pl: 1 };
+  const btns = [...document.querySelectorAll(".lang button")];
+  function setLang(l) {
+    if (!(l in idx)) l = "en";
+    els.forEach(e => { const t = T[e.dataset.t]; e.innerHTML = (l === "en" || !t) ? e._en : t[idx[l]]; });
+    nums.forEach(e => { e.innerHTML = l === "en" ? e._en : e._en.replace(/,(?=\d{3}(?!\d))/g, " ").replace(/(\d)\.(?=\d)/g, "$1,"); });
+    document.title = l === "en" ? enTitle : T.title[idx[l]];
+    document.documentElement.lang = l;
+    btns.forEach(b => b.setAttribute("aria-pressed", String(b.dataset.l === l)));
+    try { localStorage.setItem("pf-lang", l); } catch (e) {}
+  }
+  btns.forEach(b => b.addEventListener("click", () => setLang(b.dataset.l)));
+  let l = new URLSearchParams(location.search).get("lang");
+  if (!l) { try { l = localStorage.getItem("pf-lang"); } catch (e) {} }
+  setLang(l || "en");
+})();
+</script>
+<script>
+/* Collapsible cases: chips jump to a case and open it; companion slides follow their case. */
+(() => {
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function setOpen(sec, open) {
+    sec.classList.toggle("open", open);
+    const b = sec.querySelector(".more"); if (b) b.setAttribute("aria-expanded", String(open));
+    document.querySelectorAll('[data-parent="' + sec.id + '"]').forEach(x => x.classList.toggle("open", open));
+  }
+  function go(id, instant) {
+    let el = document.getElementById(id); if (!el) return;
+    const sec = el.classList.contains("case-extra") ? document.getElementById(el.dataset.parent) : el;
+    if (sec && sec.classList.contains("case")) setOpen(sec, true);
+    el.scrollIntoView({ behavior: reduce || instant ? "auto" : "smooth", block: "start" });
+  }
+  document.querySelectorAll(".case .more").forEach(b => b.addEventListener("click", () => {
+    const sec = b.closest(".case"); const open = !sec.classList.contains("open");
+    setOpen(sec, open);
+    if (!open) sec.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+  }));
+  document.querySelectorAll(".chip, .tab").forEach(a => a.addEventListener("click", e => {
+    e.preventDefault(); const id = a.getAttribute("href").slice(1);
+    history.replaceState(null, "", "#" + id); go(id);
+  }));
+  if (location.hash.length > 1) {
+    const id0 = decodeURIComponent(location.hash.slice(1));
+    go(id0, true);
+    addEventListener("load", () => go(id0, true), { once: true });
+  }
+  // bottom case menu: shows the case on screen, opens a sheet with all cases
+  const dockBtn = document.querySelector(".dock-btn"), sheet = document.getElementById("sheet"), bg = document.getElementById("sheet-bg");
+  const curLbl = document.querySelector(".dock-cur");
+  function openSheet(on) {
+    sheet.hidden = !on; bg.hidden = !on; dockBtn.setAttribute("aria-expanded", String(on));
+    if (on) (sheet.querySelector(".tab.active") || sheet.querySelector(".sheet-x")).focus(); else dockBtn.focus({ preventScroll: true });
+  }
+  dockBtn.addEventListener("click", () => openSheet(sheet.hidden));
+  bg.addEventListener("click", () => openSheet(false));
+  sheet.querySelector(".sheet-x").addEventListener("click", () => openSheet(false));
+  sheet.querySelectorAll(".tab").forEach(a => a.addEventListener("click", () => { sheet.hidden = true; bg.hidden = true; dockBtn.setAttribute("aria-expanded", "false"); }));
+  addEventListener("keydown", e => { if (e.key === "Escape" && !sheet.hidden) openSheet(false); });
+  const secs = [...document.querySelectorAll(".case, .case-extra, #more")];
+  let cur, tick = false;
+  function update(force) {
+    const line = innerHeight * 0.35; let found = null;
+    for (const s of secs) { if (!s.offsetParent) continue; if (s.getBoundingClientRect().top <= line) found = s; }
+    const id = found ? (found.dataset.parent || found.id) : null;
+    if (id === cur && !force) return; cur = id;
+    sheet.querySelectorAll(".tab.active").forEach(x => x.classList.remove("active"));
+    const t = id && sheet.querySelector('.tab[href="#' + id + '"]');
+    if (t) t.classList.add("active");
+    const n = t && t.querySelector(".n"), b = t && t.querySelector("b");
+    curLbl.textContent = n && b ? "· " + n.textContent + " " + b.textContent : "";
+  }
+  addEventListener("scroll", () => { if (!tick) { tick = true; requestAnimationFrame(() => { tick = false; update(); }); } }, { passive: true });
+  document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", () => setTimeout(() => update(true))));
+  update(true);
+})();
+</script>
+
+</html>
